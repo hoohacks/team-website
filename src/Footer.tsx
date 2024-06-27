@@ -25,7 +25,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="text-center text-sm">
-          © 2023 HooHacks ~ Made in Charlottesville
+        Made with <span className="text-red-500">❤️</span> by the HooHacks team
         </p>
       </div>
     </footer>
