@@ -1,6 +1,3 @@
-import React from 'react';
-import Navbar from './Navbar';
-import Footer from './Footer';
 import { Route, Routes } from 'react-router-dom';
 import JoinPage from './screens/join-page';
 
