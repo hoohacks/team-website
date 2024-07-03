@@ -33,8 +33,6 @@ const JoinPage = () => {
         }))
     }
 
-    console.log(userDetails)
-
     return (
         <div>
             <Navbar/>
