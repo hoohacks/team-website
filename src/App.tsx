@@ -1,14 +1,13 @@
 import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import AnimatedLogo from './AnimatedLogo';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <header className="App-header flex justify-center items-center h-screen bg-gray-100">
-        <p className="text-xl text-gray-800">Hello World</p>
-      </header>
+      <AnimatedLogo />
       <Footer />
     </div>
   );
