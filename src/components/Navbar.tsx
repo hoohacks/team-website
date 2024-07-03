@@ -1,5 +1,5 @@
 import React from 'react';
-import owlLogo from './components/hoohacks-owl-logo.png';
+import owlLogo from "../assets/hoohacks-owl-logo.png"
 
 const Navbar = () => {
   return (

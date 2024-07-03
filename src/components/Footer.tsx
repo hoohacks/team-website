@@ -1,9 +1,9 @@
 import React from 'react';
-import xLogo from './components/x.png';
-import facebookLogo from './components/facebook.png';
-import instaLogo from './components/insta.png';
-import linkedinLogo from './components/linkedin.png';
-import footerOwl from './components/footerowl.png';
+import xLogo from '../assets/x.png';
+import facebookLogo from '../assets/facebook.png';
+import instaLogo from '../assets/insta.png';
+import linkedinLogo from '../assets/linkedin.png';
+import footerOwl from '../assets/footerowl.png';
 
 const Footer = () => {
   return (

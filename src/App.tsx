@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import JoinPage from './screens/join-page';
+import JoinPage from './screens/JoinPage';
 
 function App() {
   return (
