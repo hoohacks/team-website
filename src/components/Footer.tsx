@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer className="bg-primary-blue text-white p-6 h-70">
       <div className="flex flex-col items-center">
-        <img src={footerOwl} alt="Owl Logo" className="h-12 mb-4" />
+        <img src={footerOwl} alt="Owl Logo" className="h-20 mb-4" />
         <div className="flex gap-6 mb-4">
           <a href="https://www.instagram.com/hoohacks">
             <img src={instaLogo} alt="Instagram" className="h-6" />
