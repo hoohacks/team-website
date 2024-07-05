@@ -1,10 +1,12 @@
 import React from "react";
-import AnimatedText from "../components/AnimatedText";
+import AnimatedText from "./AnimatedText";
+import Events from "./Events";
 
 const Home = () => {
   return (
     <>
       <AnimatedText />
+      <Events />
     </>
   );
 };

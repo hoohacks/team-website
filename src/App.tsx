@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import JoinPage from "./screens/JoinPage";
-import Home from "./screens/Home";
+import Home from "./screens/Home/Home";
 import NotFound from "./screens/NotFound";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";

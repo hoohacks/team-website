@@ -1,5 +1,5 @@
 import React from "react";
-import hoohacksLogo from "../assets/hooMain.png";
+import hoohacksLogo from "../../assets/hooMain.png";
 
 const AnimatedText = () => {
   return (
