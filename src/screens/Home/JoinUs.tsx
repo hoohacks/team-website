@@ -8,7 +8,7 @@ const JoinUs = () => {
         style={{ color: "#121A6A" }}
         className="font-bold text-2xl md:text-3xl lg:text-4xl text-center mb-8"
       >
-        Join Us
+        Join Us!
       </h2>
       <div className="flex flex-col items-center md:flex-row md:justify-center gap-8">
         <div className="w-full md:w-1/2 lg:w-1/3 mb-4 md:mb-0">
