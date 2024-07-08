@@ -33,29 +33,29 @@ const JoinPage = () => {
   return (
     <div>
       <div className="container mx-auto flex flex-col h-screen items-center">
-        <div className="mb-7 font">Fall Recruitment</div>
-        <div className="w-2/3 text-center mb-8 text-sm">
+        <div className="mb-7 font" style={{ color: "#2848BA", fontSize:"24px", fontWeight:"bold"}}>Fall Recruitment</div>
+        <div className="w-2/3 text-center mb-8 text-sm" style={{fontSize:"16px"}}>
           Our recruitment begins in September and is typically open until for
           two weeks until interviews begin. No prior experience is required to
-          apply
+          apply!
         </div>
         <div className="mb-20">
           <button
             className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-            onClick={handleApply}
+            onClick={handleApply} style={{backgroundColor: "#2848BA"}}
           >
             Apply!
           </button>
         </div>
-        <div className="text-xl mb-2">Subscribe to our Newsletter!</div>
-        <div className="text-xs mb-10">
+        <div className="text-xl mb-2" style={{ color: "#2848BA", fontSize:"24px", fontWeight:"bold"}}>Subscribe to our Newsletter!</div>
+        <div className="text-xs mb-10" style={{fontSize:"16px"}}>
           Stay updated with everything HooHacks
         </div>
         <form className="w-full max-w-sm">
           <div className="flex flex-col mb-6 items-center">
             <div className="mr-auto">
               <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
+                className="block font-bold text-right mb-1 mb-0 pr-4"
                 htmlFor="inline-full-name"
               >
                 First Name
@@ -63,7 +63,7 @@ const JoinPage = () => {
             </div>
             <div className="w-full">
               <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                className="bg-gray-200 border-gray-400 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                 id="inline-full-name"
                 type="text"
                 name="firstName"
@@ -75,7 +75,7 @@ const JoinPage = () => {
           <div className="flex flex-col items-center mb-6">
             <div className="mr-auto">
               <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
+                className="block font-bold text-right mb-1 mb-0 pr-4"
                 htmlFor="inline-last-name"
               >
                 Last Name
@@ -83,7 +83,7 @@ const JoinPage = () => {
             </div>
             <div className="w-full">
               <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                className="bg-gray-200 border-gray-400 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                 id="inline-last-name"
                 type="text"
                 name="lastName"
@@ -95,7 +95,7 @@ const JoinPage = () => {
           <div className="flex flex-col items-center mb-10">
             <div className="mr-auto">
               <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
+                className="block font-bold text-right mb-1 mb-0 pr-4"
                 htmlFor="inline-email"
               >
                 Email
@@ -103,7 +103,7 @@ const JoinPage = () => {
             </div>
             <div className="w-full">
               <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+                className="bg-gray-200 border-gray-400 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
                 id="inline-email"
                 type="email"
                 name="Email"
@@ -116,7 +116,7 @@ const JoinPage = () => {
         <div>
           <button
             className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-            onClick={handleSubscribe}
+            onClick={handleSubscribe} style={{backgroundColor: "#2848BA"}}
           >
             Subscribe
           </button>
