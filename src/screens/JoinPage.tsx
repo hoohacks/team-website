@@ -69,6 +69,7 @@ const JoinPage = () => {
                 name="firstName"
                 value={userDetails.firstName}
                 onChange={handleInput}
+                style={{ opacity: 1, backgroundColor: "#FFFFFF"}}
               />
             </div>
           </div>
@@ -89,6 +90,7 @@ const JoinPage = () => {
                 name="lastName"
                 value={userDetails.lastName}
                 onChange={handleInput}
+                style={{ opacity: 100, backgroundColor: "#FFFFFF"}}
               />
             </div>
           </div>
@@ -109,6 +111,7 @@ const JoinPage = () => {
                 name="Email"
                 value={userDetails.Email}
                 onChange={handleInput}
+                style={{ opacity: 100, backgroundColor: "#FFFFFF"}}
               />
             </div>
           </div>
