@@ -34,14 +34,14 @@ const JoinPage = () => {
     <div>
       <div className="container mx-auto flex flex-col h-screen items-center">
         <div className="mb-7 font" style={{ color: "#2848BA", fontSize:"24px", fontWeight:"bold"}}>Fall Recruitment</div>
-        <div className="w-2/3 text-center mb-8 text-sm" style={{fontSize:"16px"}}>
+        <div className="w-2/3 text-center mb-10 text-sm" style={{fontSize:"16px"}}>
           Our recruitment begins in September and is typically open until for
           two weeks until interviews begin. No prior experience is required to
           apply!
         </div>
         <div className="mb-20">
           <button
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-14 border-b-4 border-blue-700 hover:border-blue-500 rounded"
             onClick={handleApply} style={{backgroundColor: "#2848BA"}}
           >
             Apply!
@@ -115,7 +115,7 @@ const JoinPage = () => {
         </form>
         <div>
           <button
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-10 border-b-4 border-blue-700 hover:border-blue-500 rounded"
             onClick={handleSubscribe} style={{backgroundColor: "#2848BA"}}
           >
             Subscribe
