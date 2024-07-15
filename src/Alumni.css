@@ -1,0 +1,48 @@
+.timeline{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.bars{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.bar{
+    padding: 10px;
+    cursor: pointer;
+    background-color: #2848BA;
+    color: white;
+    border-radius: 5px;
+}
+
+.bar.active{
+    color: white;
+}
+
+.dropdown{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.events{
+    display: none;
+    text-align: left;
+}
+
+.events.active{
+    display: block;
+    max-width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
