@@ -17,6 +17,8 @@
     background-color: #2848BA;
     color: white;
     border-radius: 5px;
+    border-color: white;
+    border-width: 1px;
 }
 
 .bar.active{
