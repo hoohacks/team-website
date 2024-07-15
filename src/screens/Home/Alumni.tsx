@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import '../../Alumni.css';
 
+
 const Alumni = () => {
     const [selectedYear, setSelectedYear] = useState(0);
 
@@ -31,20 +32,26 @@ const Alumni = () => {
                 <div className="bars">
                     {eventsData.map((item, index)=> (
                         <div>
-                            <div
+                            {selectedYear === item.year ? (null) : <div
                                 key={index}
                                 className={`bar ${selectedYear === item.year ? 'active' : ''}`}
                                 style={{height: selectedYear === item.year ? '80%' : '20%'}}
                                 onClick={() => handleBarClick(item.year)}
                             >
                                 {item.year}
-                            </div>
+                            </div>}
                             {selectedYear === item.year ? (
-                                <div>
+                                <div className = "dropdown"
+                                onClick={() => handleBarClick(item.year)}
+                                >
+                                    <div className="topRow">
+                                        <h3 className="year">{item.year}</h3>
+                                        <h3 className="arrow"> _ </h3>
+                                    </div>
                                     <h3>
-                                    {item.events.map((event, index) => (
-                                    <h3 key={index}>{event}</h3>
-                                ))}
+                                        {item.events.map((event, index) => (
+                                        <h3 className="info" key={index}>{event}</h3>
+                                    ))}
                                     </h3>
                                 </div>
                             ) : null }
