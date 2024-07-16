@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import '../../Alumni.css';
+import profileImage from '../../assets/profile_image.png';
 
 
 const Alumni = () => {
@@ -10,10 +11,11 @@ const Alumni = () => {
       setSelectedYear(selectedYear === year ? 0 : year);
     }
 
-    const eventsData = [
-        { year: 2020, events: ["Event 1 description", "Event 2 description"] },
-        { year: 2021, events: ["Event 3 description"] },
-        { year: 2022, events: ["Event 4 description", "Event 5 description", "Event 6 description"] },
+    const peopleData = [
+        { year: 2024, people: ["Year 1 Alum","Year 1 Alum", "Year 1 Alum"] },
+        { year: 2022, people: ["Year 2 Alum", "Year 2 Alum", "Year 2 Alum"] },
+        { year: 2021, people: ["Year 3 Alum", "Year 3 Alum", "Year 3 Alum"] },
+        { year: 2020, people: ["Year 4 Alum", "Year 4 Alum", "Year 4 alum"] },
       ];
 
     return (
@@ -30,7 +32,7 @@ const Alumni = () => {
 
             <div className="timeline">
                 <div className="bars">
-                    {eventsData.map((item, index)=> (
+                    {peopleData.map((item, index)=> (
                         <div>
                             {selectedYear === item.year ? (null) : <div
                                 key={index}
@@ -48,11 +50,24 @@ const Alumni = () => {
                                         <h3 className="year">{item.year}</h3>
                                         <h3 className="arrow"> _ </h3>
                                     </div>
-                                    <h3>
-                                        {item.events.map((event, index) => (
-                                        <h3 className="info" key={index}>{event}</h3>
-                                    ))}
-                                    </h3>
+                                    <div className="peopleCol">
+                                        <div className="peopleRow">
+                                                {item.people.map((person, index)=>(
+                                                    <div className = "person">
+                                                        <img className="profileImage" src={profileImage}/>
+                                                        <h3 className="info" key={index}>{person}</h3>
+                                                    </div>
+                                                ))}
+                                        </div>
+                                        <div className="peopleRow">
+                                                {item.people.map((person, index)=>(
+                                                    <div className = "person">
+                                                        <img className="profileImage" src={profileImage}/>
+                                                        <h3 className="info" key={index}>{person}</h3>
+                                                    </div>
+                                                ))}
+                                        </div>
+                                    </div>
                                 </div>
                             ) : null }
                         </div>
