@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import '../../Alumni.css';
 import profileImage from '../../assets/profile_image.png';
+import downArrow from '../../assets/downArrow.png';
+import upArrow from '../../assets/upArrow.png';
 
 
 const Alumni = () => {
@@ -41,14 +43,16 @@ const Alumni = () => {
                                 onClick={() => handleBarClick(item.year)}
                             >
                                 {item.year}
-                            </div>}
+                                <img className="arrow" src={upArrow}/>
+                            </div>
+                            }
                             {selectedYear === item.year ? (
                                 <div className = "dropdown"
                                 onClick={() => handleBarClick(item.year)}
                                 >
                                     <div className="topRow">
                                         <h3 className="year">{item.year}</h3>
-                                        <h3 className="arrow"> _ </h3>
+                                        <img className="arrow" src={downArrow}/>
                                     </div>
                                     <div className="peopleCol">
                                         <div className="peopleRow">

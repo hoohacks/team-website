@@ -19,6 +19,11 @@
     border-radius: 5px;
     border-color: white;
     border-width: 0.5px;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    display: flex;
+    width: 100%;
 }
 
 .bar.active{
@@ -66,6 +71,7 @@
 
 .topRow{
     flex-direction: row;
+    justify-content: space-between;
     flex: 1;
     display: flex;
     width: 100%;
@@ -75,6 +81,13 @@
     align-self: flex-start;
     margin-left: 10px;
     margin-top: 10px;
+}
+
+.arrow{
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 2%;
+    height: 2%;
 }
 
 .profileImage{
