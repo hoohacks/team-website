@@ -31,6 +31,7 @@
 }
 
 .dropdown{
+    cursor: pointer;
     flex-direction: column;
     flex: 1;
     display: flex;
