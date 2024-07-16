@@ -37,6 +37,23 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
     box-shadow: black 0 5px 5px -6px;
+    padding-left: 10%;
+}
+
+.people{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.person{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: center;
 }
 
 .topRow{
@@ -52,8 +69,7 @@
     margin-top: 10px;
 }
 
-.events{
-    display: none;
-    text-align: center;
-    margin-bottom: 20px;
+.profileImage{
+    height: 50%;
+    width: 50%;
 }
