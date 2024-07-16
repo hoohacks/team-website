@@ -12,10 +12,10 @@ const Alumni = () => {
     }
 
     const peopleData = [
-        { year: 2024, people: ["Year 1 Alum","Year 1 Alum", "Year 1 Alum"] },
-        { year: 2022, people: ["Year 2 Alum", "Year 2 Alum", "Year 2 Alum"] },
-        { year: 2021, people: ["Year 3 Alum", "Year 3 Alum", "Year 3 Alum"] },
-        { year: 2020, people: ["Year 4 Alum", "Year 4 Alum", "Year 4 alum"] },
+        { year: 2024, people: ["Year 1 Alum","Year 1 Alum", "Year 1 Alum"], linkedIn: ["linkedin.com", "linkedin.com", "linkedin.com"] },
+        { year: 2022, people: ["Year 2 Alum", "Year 2 Alum", "Year 2 Alum"], linkedIn: ["linkedin.com", "linkedin.com", "linkedin.com"] },
+        { year: 2021, people: ["Year 3 Alum", "Year 3 Alum", "Year 3 Alum"], linkedIn: ["linkedin.com", "linkedin.com", "linkedin.com"] },
+        { year: 2020, people: ["Year 4 Alum", "Year 4 Alum", "Year 4 alum"], linkedIn: ["linkedin.com", "linkedin.com", "linkedin.com"] },
       ];
 
     return (
