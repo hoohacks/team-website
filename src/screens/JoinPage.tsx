@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const JoinPage = () => {
-  const intialFormData = {
+  const initialFormData = {
     firstName: "",
     lastName: "",
     Email: "",
@@ -18,7 +18,7 @@ const JoinPage = () => {
   };
 
   const handleSubscribe = () => {
-    setUserDetails(intialFormData);
+    setUserDetails(initialFormData);
     console.log("Subscribe to Eddie's OnlyFans!");
   };
 
