@@ -4,6 +4,7 @@ import { useState } from 'react';
 import React from "react";
 import placementImage from "../assets/hoohacks-placement.png"; // Replace with actual image path
 
+
 const Archive = () => {
 
   return (
@@ -47,11 +48,23 @@ const Archive = () => {
         {/* First Carousel Row */}
         <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row1-${index}`}></div>
+            {sponsors.slice(1,4).map((sponsor, index) => (
+              <div className='sponsor-logo' key={`row1-${index}`}>
+              <img
+              src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+              alt={sponsor.name}
+              className='sponsor-logo'
+              />
+              </div>
             ))}
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row1-dup-${index}`}></div>
+            {sponsors.map((sponsor, index) => (
+              <div className="sponsor-logo" key={`row1-dup-${index}`}>
+                <img
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
+                className='sponsor-logo'
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -59,15 +72,23 @@ const Archive = () => {
         {/* Second Carousel Row */}
         <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {sponsors.map((spons, index) => (
+            {sponsors.slice(0,3).map((sponsor, index) => (
+                <div className='sponsor-logo' key={`row2-${index}`}>
                 <img
-                src={spons.logo}
-                alt={spons.name}
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
                 className='sponsor-logo'
-                key={`row2-${index}`}/>
+                />
+                </div>
             ))}
-            {sponsors.map((spons, index) => (
-              <div className="sponsor-logo" key={`row2-dup-${index}`}>{spons.logo}</div>
+            {sponsors.slice(4,8).map((sponsor, index) => (
+              <div className='sponsor-logo' key={`row2-dup-${index}`} >
+                <img
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
+                className='sponsor-logo'
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -75,11 +96,23 @@ const Archive = () => {
         {/* Third Carousel Row */}
         <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {sponsors.map((_, index) => (
-              <div className="sponsor-logo" key={`row3-${index}`}></div>
+            {sponsors.map((sponsor, index) => (
+              <div className="sponsor-logo" key={`row3-${index}`}>
+                <img
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
+                className='sponsor-logo'
+                />
+              </div>
             ))}
-            {sponsors.map((_, index) => (
-              <div className="sponsor-logo" key={`row3-dup-${index}`}></div>
+            {sponsors.map((sponsor, index) => (
+              <div className="sponsor-logo" key={`row3-dup-${index}`}>
+                <img
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
+                className='sponsor-logo'
+                />
+              </div>
             ))}
           </div>
         </div>

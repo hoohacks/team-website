@@ -1,54 +1,68 @@
+import nvidiaLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/nvidia.svg';
+import appleLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/apple-black-logo-svgrepo-com.svg'
+import googleLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/google-icon-logo-svgrepo-com.svg';
+import ibmLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/ibm-logo-svgrepo-com.svg';
+import amazonLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/amazon-icon-logo-svgrepo-com.svg';
+import appianLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/appian-rebrand-1.svg'
+import geicoLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/geico-1.svg'
+import microsoftLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/microsoft-logo-svgrepo-com.svg'
+import githubLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/github-2.svg'
+import leidosLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/leidos-1.svg'
+import palantirLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/palantir-technologies-logo.svg'
+import redbullLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/redbull-logo-svgrepo-com.svg'
+import mongodbLogo from '/Users/akhil/Desktop/Computer Science /HooHacks/team-website/src/screens/sponsors/mongodb-icon-2.svg'
+
 export const sponsors = [
     {
         name: "NVIDIA",
-        logo: 'src/screens/sponsors/nvidia.svg',
+        logo: nvidiaLogo,
     },
     {
         name: "Apple",
-        logo: 'src/assets/sponsors/apple-black-logo-svgrepo-com.svg',
+        logo: appleLogo,
     },
     {
         name: "Google",
-        logo: 'src/assets/sponsors/google-icon-logo-svgrepo-com.svg',
+        logo: googleLogo,
     },
     {
         name: "IBM",
-        logo: 'src/assets/sponsors/ibm-logo-svgrepo-com.svg',
+        logo: ibmLogo,
     },
     {
         name: "Amazon",
-        logo: 'src/assets/sponsors/amazon-icon-logo-svgrepo-com.svg',
+        logo: amazonLogo,
     },
     {
         name: "Appian",
-        logo: 'src/assets/sponsors/appian-rebrand-1.svg',
+        logo: appianLogo,
     },
     {
         name: "GEICO",
-        logo: 'src/assets/sponsors/geico-1.svg',
+        logo: geicoLogo,
     },
     {
         name: "GitHub",
-        logo: 'src/assets/sponsors/github-2.svg',
+        logo: githubLogo,
     },
     {
         name: "Leidos",
-        logo: 'src/assets/sponsors/leidos-1.svg',
+        logo: leidosLogo,
     },
     {
         name: "Microsoft",
-        logo: 'src/assets/sponsors/microsoft-logo-svgrepo-com.svg',
+        logo: microsoftLogo,
     },
     {
         name: "Mongo DB",
-        logo: 'src/assets/sponsors/mongodb-icon-2.svg',
+        logo: mongodbLogo,
     },
     {
         name: "Palantir",
-        logo: 'src/assets/sponsors/palantir-technologies-logo.svg',
+        logo: palantirLogo,
     },
     {
         name: "Redbull",
-        logo: 'src/assets/sponsors/redbull-logo-svgrepo-com.svg',
+        logo: redbullLogo,
     },
 ]

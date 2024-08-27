@@ -6,7 +6,7 @@
     background-color: #ffffff; /* Overall white background */
     font-family: Arial, sans-serif; /* Optionally use a custom web font */
   }
-  
+
   .history-section {
     background-color: #ffffff; /* White background */
     padding: 30px;
@@ -17,14 +17,14 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-left: 6px solid #121A6A; /* Orange border for aesthetic */
   }
-  
+
   .history-title {
     font-size: 32px;
     color: #121A6A; /* Dark blue color */
     font-weight: bold;
     margin-bottom: 20px;
   }
-  
+
   .history-text {
     font-size: 18px;
     color: #121A6A; /* Dark blue color */
@@ -32,7 +32,7 @@
     margin-bottom: 15px;
     text-align: justify;
   }
-  
+
   .placement-section {
     background-color: #ffffff; /* White background */
     padding: 30px;
@@ -43,21 +43,21 @@
     border-left: 6px solid #2848BA; /* Blue border for aesthetic */
     text-align: center;
   }
-  
+
   .placement-title {
     font-size: 28px;
     color: #121A6A; /* Dark blue color */
     font-weight: bold;
     margin-bottom: 15px;
   }
-  
+
   .placement-text {
     font-size: 18px;
     color: #121A6A; /* Dark blue color */
     line-height: 1.8;
     margin-bottom: 25px;
   }
-  
+
   .placement-image {
     width: 100%;
     height: auto;
@@ -65,7 +65,7 @@
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   .sponsors-section {
     background-color: #ffffff;
     padding: 30px;
@@ -77,42 +77,44 @@
     text-align: center;
     border-left: 6px solid #87A2FC;
   }
-  
+
   .sponsors-title {
     font-size: 24px;
     color: #121A6A;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
   .sponsors-text {
     font-size: 16px;
     color: #121A6A;
     margin-bottom: 20px;
   }
-  
+
   .sponsors-carousel {
     overflow: hidden;
+    border: hidden;
     width: 100%;
     position: relative;
     margin-bottom: 20px; /* Space between rows */
   }
-  
+
   .sponsors-track {
     display: flex;
+    border: hidden;
     animation: scroll 30s linear infinite;
     width: fit-content; /* Ensures the track can be wide enough to fit all logos */
   }
-  
+
   .sponsor-logo {
     width: 180px; /* Larger sponsor logos */
     height: 100px; /* Larger height for logos */
-    background-color: #e0e0e0; /* Grey placeholder for sponsor logos */
-    border-radius: 5px;
+    background-color: #ffffff; /* Grey placeholder for sponsor logos */
+    border-radius: 0px;
+    border: hidden;
     margin: 0 15px; /* Adjusted margin for larger logos */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   /* Animation for scrolling sponsor logos */
   @keyframes scroll {
     0% {
@@ -122,4 +124,3 @@
       transform: translateX(-50%);
     }
   }
-  
