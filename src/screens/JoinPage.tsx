@@ -12,14 +12,51 @@ const JoinPage = () => {
     lastName: "",
     Email: "",
   });
+  const [isSubscribed, setIsSubscribed] = useState(false);
 
   const handleApply = () => {
-    console.log("Varizzy and Parizzy sitting in a tree KI-SS-ING");
+    console.log("Redirect to application");
   };
 
-  const handleSubscribe = () => {
+  const handleSubscribe = async (event: any) => {
     setUserDetails(intialFormData);
-    console.log("Subscribe to Eddie's OnlyFans!");
+    event.preventDefault();
+
+    setIsSubscribed(true);
+
+    // Clear the form fields
+    setUserDetails({ firstName: "", lastName: "", Email: "" });
+
+    // Create the data payload
+    const formData = new FormData();
+    formData.append("u", "8db3fa0f566f9edea113259df");
+    formData.append("id", "b74b5fd33d");
+    formData.append("MERGE1", userDetails.firstName);
+    formData.append("MERGE2", userDetails.lastName);
+    formData.append("MERGE0", userDetails.Email);
+
+    try {
+      // Make the POST request
+      const response = await fetch(
+        "https://hoohacks.us17.list-manage.com/subscribe/post",
+        {
+          method: "POST",
+          body: formData,
+        }
+      );
+
+      // Check if the request was successful
+      if (response.ok) {
+        console.log("Subscription successful!");
+        // You can handle the success response here if needed
+      } else {
+        console.error("Subscription failed");
+        // Handle the error response here if needed
+      }
+    } catch (error) {
+      console.error("Error during subscription:", error);
+      // Handle the error here if needed
+    }
   };
 
   const handleInput = (event: any) => {
@@ -51,7 +88,7 @@ const JoinPage = () => {
         <div className="text-xs mb-10">
           Stay updated with everything HooHacks
         </div>
-        <form className="w-full max-w-sm">
+        <form className="w-full max-w-sm" onSubmit={handleSubscribe}>
           <div className="flex flex-col mb-6 items-center">
             <div className="mr-auto">
               <label
@@ -112,15 +149,22 @@ const JoinPage = () => {
               />
             </div>
           </div>
+          <div className="flex justify-center items-center">
+            <button
+              className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              type="submit"
+              disabled={isSubscribed}
+            >
+              {isSubscribed ? (
+                <span style={{ color: "white" }}>
+                  {userDetails.Email} Added to Listserv ✔️
+                </span>
+              ) : (
+                "Subscribe"
+              )}
+            </button>
+          </div>
         </form>
-        <div>
-          <button
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
-            onClick={handleSubscribe}
-          >
-            Subscribe
-          </button>
-        </div>
       </div>
     </div>
   );
