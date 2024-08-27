@@ -17,13 +17,7 @@ const Navbar = () => {
         >
           About
         </a>
-        <a
-          href="/team"
-          style={{ color: "#2848BA" }}
-          className="font-semibold text-sm md:text-lg lg:text-xl"
-        >
-          Meet the Team
-        </a>
+
         <a
           href="/archive"
           style={{ color: "#2848BA" }}

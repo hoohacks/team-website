@@ -1,6 +1,5 @@
 import React from "react";
 import ideathonLogo from "../../assets/ideathonLogo.png";
-import estimathonLogo from "../../assets/estimathonLogo.png";
 import hoohacksBlackLogo from "../../assets/hoohacksBlackLogo.png";
 
 const Events = () => {
@@ -17,13 +16,6 @@ const Events = () => {
           <img
             src={ideathonLogo}
             alt="Ideathon"
-            className="w-full h-auto max-h-32 sm:max-h-40 md:max-h-48 lg:max-h-56"
-          />
-        </div>
-        <div className="flex justify-center items-center p-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-          <img
-            src={estimathonLogo}
-            alt="Estimathon"
             className="w-full h-auto max-h-32 sm:max-h-40 md:max-h-48 lg:max-h-56"
           />
         </div>
