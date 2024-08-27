@@ -22,7 +22,7 @@ const Home = () => {
               </p>
             </div>
             <div className="w-2/5 flex justify-center">
-              <img src={circleImage} alt="Hoohacks Circular Logo" className="w-52 h-52 rounded-full object-cover" />
+              <img src={circleImage} alt="Hoohacks Circular Logo" className="w-52 h-52" />
             </div>
           </div>
         </div>
@@ -34,19 +34,22 @@ const Home = () => {
         </div>
 
 
-        <div className="w-1/2 flex justify-center items-start pb-48">
-          <div className="w-2/5 text-center">
+        <div className="w-1/2 flex flex-col md:flex-row justify-center items-center pb-48 space-y-5 md:space-y-0 md:space-x-10">
+          <div className="w-full md:w-2/5 text-center">
             <a href="https://ideathon.hoohacks.io/" target="_blank" rel="noopener noreferrer">
               <img src={ideathonLogo} alt="Ideathon Logo" />
             </a>
           </div>
 
-          <div className="w-2/5 text-center pt-2 pt-5">
+          <div className="w-full md:w-2/5 text-center pt-4">
             <a href="https://www.hoohacks.io/" target="_blank" rel="noopener noreferrer">
               <img src={hoohacksLogoSmall} alt="HooHacks Logo" />
             </a>
           </div>
         </div>
+
+
+
 
         <div className="w-1/2 flex justify-between items-start pb-48">
           <div className="w-1/3">

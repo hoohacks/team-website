@@ -12,7 +12,7 @@ const Navbar = () => {
         />
         <a
           href="/"
-          style={{ color: "#2848BA" }}
+          style={{ color: "#121A6A" }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
         >
           About
@@ -20,14 +20,14 @@ const Navbar = () => {
 
         <a
           href="/archive"
-          style={{ color: "#2848BA" }}
+          style={{ color: "#121A6A" }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
         >
           Archive
         </a>
         <a
           href="/join"
-          style={{ color: "#2848BA" }}
+          style={{ color: "#121A6A" }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
         >
           Join
@@ -36,14 +36,14 @@ const Navbar = () => {
       <div className="flex gap-4 md:gap-8 lg:gap-16 mt-4 md:mt-0">
         <a
           href="https://ideathon.hoohacks.io/"
-          style={{ backgroundColor: "#2848BA" }}
+          style={{ backgroundColor: "#121A6A" }}
           className="text-white px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-2 rounded-md font-semibold text-xs md:text-sm lg:text-base"
         >
           Ideathon
         </a>
         <a
           href="https://www.hoohacks.io/"
-          style={{ backgroundColor: "#2848BA" }}
+          style={{ backgroundColor: "#121A6A" }}
           className="text-white px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-2 rounded-md font-semibold text-xs md:text-sm lg:text-base"
         >
           HooHacks
