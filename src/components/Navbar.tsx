@@ -1,7 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import owlLogo from "../assets/hoohacks-owl-logo.png";
 
 const Navbar = () => {
+  const [isAboutHovered, setIsAboutHovered] = useState(false);
+  const [isArchiveHovered, setIsArchiveHovered] = useState(false);
+  const [isJoinHovered, setIsJoinHovered] = useState(false);
+  
   return (
     <nav className="flex flex-wrap items-center justify-between p-4 md:p-8 lg:p-16 bg-white font-chakra-petch">
       <div className="flex items-center gap-4 md:gap-8 lg:gap-16 pl-4 md:pl-8 lg:pl-20">
@@ -12,41 +16,40 @@ const Navbar = () => {
         />
         <a
           href="/"
-          style={{ color: "#121A6A" }}
+          style={{ 
+            color: "#121A6A",
+            textDecoration: isAboutHovered ? "underline" : "none"
+          }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
+          onMouseEnter={() => setIsAboutHovered(true)}
+          onMouseLeave={() => setIsAboutHovered(false)}
         >
           About
         </a>
 
         <a
           href="/archive"
-          style={{ color: "#121A6A" }}
+          style={{ 
+            color: "#121A6A",
+            textDecoration: isArchiveHovered ? "underline" : "none"
+          }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
+          onMouseEnter={() => setIsArchiveHovered(true)}
+          onMouseLeave={() => setIsArchiveHovered(false)}
         >
           Archive
         </a>
         <a
           href="/join"
-          style={{ color: "#121A6A" }}
+          style={{ 
+            color: "#121A6A",
+            textDecoration: isJoinHovered ? "underline" : "none"
+          }}
           className="font-semibold text-sm md:text-lg lg:text-xl"
+          onMouseEnter={() => setIsJoinHovered(true)}
+          onMouseLeave={() => setIsJoinHovered(false)}
         >
           Join
-        </a>
-      </div>
-      <div className="flex gap-4 md:gap-8 lg:gap-16 mt-4 md:mt-0">
-        <a
-          href="https://ideathon.hoohacks.io/"
-          style={{ backgroundColor: "#121A6A" }}
-          className="text-white px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-2 rounded-md font-semibold text-xs md:text-sm lg:text-base"
-        >
-          Ideathon
-        </a>
-        <a
-          href="https://www.hoohacks.io/"
-          style={{ backgroundColor: "#121A6A" }}
-          className="text-white px-4 py-2 md:px-8 md:py-2 lg:px-16 lg:py-2 rounded-md font-semibold text-xs md:text-sm lg:text-base"
-        >
-          HooHacks
         </a>
       </div>
     </nav>
