@@ -1,6 +1,6 @@
 import './Archive.css';
 import React from "react";
-import placementImage from "../assets/hoohacks-placement.png"; // Replace with actual image path
+import placementImage from "../assets/hoohacks-placement.png";
 
 const Archive = () => {
   return (

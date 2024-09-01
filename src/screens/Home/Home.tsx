@@ -1,6 +1,6 @@
 import React from "react";
 import hoohacksLogo from "../../assets/hoohacks_website_logo.gif"; // Big HooHacks GIF
-import circleImage from "../../assets/sticker.png"; // Circular image (placeholder for actual image)
+import circleImage from "../../assets/circleLogo.png"; // Circular image (placeholder for actual image)
 import ideathonLogo from "../../assets/ideathonLogo.png"; // Ideathon logo
 import hoohacksLogoSmall from "../../assets/longhoohacks.png"; // Small HooHacks logo
 import teamPhoto from "../../assets/teamphoto.png"; // Team photo
