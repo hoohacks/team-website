@@ -16,7 +16,9 @@ const JoinPage = () => {
 
   const handleApply = () => {
     console.log("Redirect to application");
-  };
+    window.open("https://forms.office.com/r/HpE1Lm4wCj", "_blank");
+};
+
 
   const handleSubscribe = async (event: any) => {
     setUserDetails(intialFormData);
@@ -68,96 +70,95 @@ const JoinPage = () => {
   };
 
   return (
-    <div>
-      <div className="container mx-auto flex flex-col h-screen items-center">
-        <div className="mb-7 font">Fall Recruitment</div>
-        <div className="w-2/3 text-center mb-8 text-sm">
-          Our recruitment begins in September and is typically open until for
-          two weeks until interviews begin. No prior experience is required to
-          apply
+    <div className="min-h-screen bg-gray-100 flex items-center justify-center font-sans text-[#121A6A]">
+      <div className="container mx-auto max-w-xl px-4 flex flex-col items-center">
+        <div className="mb-7 text-center font-chakra-petch text-2xl font-bold pt-10">
+          Fall Recruitment
         </div>
-        <div className="mb-20">
+        <div className="text-center mb-8 text-sm pt-10">
+
+        We seek passionate and creative individuals who are eager to learn, grow, and make a meaningful contribution to our team. We value diverse backgrounds and perspectives and encourage all students to apply, regardless of major or prior experience.
+          
+        </div>
+        <div className="text-center mb-8 text-sm pb-6">
+          <b>
+            Our Fall 2024 application is now open and will close on <u>September 6th</u>.
+          </b>
+        </div>
+        <div className="mb-10">
           <button
-            className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+            className="bg-[#121A6A] hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-md"
             onClick={handleApply}
           >
             Apply!
           </button>
         </div>
-        <div className="text-xl mb-2">Subscribe to our Newsletter!</div>
-        <div className="text-xs mb-10">
+        <div className="text-2xl mb-2 font-chakra-petch font-bold pt-10 pb-6">
+          Subscribe to our Newsletter!
+        </div>
+        <div className="text-s mb-10">
           Stay updated with everything HooHacks
         </div>
-        <form className="w-full max-w-sm" onSubmit={handleSubscribe}>
-          <div className="flex flex-col mb-6 items-center">
-            <div className="mr-auto">
-              <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
-                htmlFor="inline-full-name"
-              >
-                First Name
-              </label>
-            </div>
-            <div className="w-full">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-full-name"
-                type="text"
-                name="firstName"
-                value={userDetails.firstName}
-                onChange={handleInput}
-              />
-            </div>
+        <form className="w-full max-w-xs pb-20" onSubmit={handleSubscribe}>
+          <div className="flex flex-col mb-4">
+            <label
+              className="block text-sm font-bold mb-2"
+              htmlFor="inline-full-name"
+            >
+              First Name
+            </label>
+            <input
+              className="bg-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="inline-full-name"
+              type="text"
+              name="firstName"
+              value={userDetails.firstName}
+              onChange={handleInput}
+            />
           </div>
-          <div className="flex flex-col items-center mb-6">
-            <div className="mr-auto">
-              <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
-                htmlFor="inline-last-name"
-              >
-                Last Name
-              </label>
-            </div>
-            <div className="w-full">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-last-name"
-                type="text"
-                name="lastName"
-                value={userDetails.lastName}
-                onChange={handleInput}
-              />
-            </div>
+          <div className="flex flex-col mb-4">
+            <label
+              className="block text-sm font-bold mb-2"
+              htmlFor="inline-last-name"
+            >
+              Last Name
+            </label>
+            <input
+              className="bg-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="inline-last-name"
+              type="text"
+              name="lastName"
+              value={userDetails.lastName}
+              onChange={handleInput}
+            />
           </div>
-          <div className="flex flex-col items-center mb-10">
-            <div className="mr-auto">
-              <label
-                className="block text-gray-500 font-bold text-right mb-1 mb-0 pr-4"
-                htmlFor="inline-email"
-              >
-                Email
-              </label>
-            </div>
-            <div className="w-full">
-              <input
-                className="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
-                id="inline-email"
-                type="email"
-                name="Email"
-                value={userDetails.Email}
-                onChange={handleInput}
-              />
-            </div>
+          <div className="flex flex-col mb-6">
+            <label
+              className="block text-sm font-bold mb-2"
+              htmlFor="inline-email"
+            >
+              Email
+            </label>
+            <input
+              className="bg-white appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="inline-email"
+              type="email"
+              name="Email"
+              value={userDetails.Email}
+              onChange={handleInput}
+            />
           </div>
-          <div className="flex justify-center items-center">
+          <div className="flex justify-center pb-10">
             <button
-              className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded"
+              className={`bg-[#121A6A] hover:bg-blue-800 text-white font-bold py-3 px-8 rounded-lg shadow-md ${
+                isSubscribed ? "opacity-50 cursor-not-allowed" : ""
+              }`}
               type="submit"
               disabled={isSubscribed}
             >
               {isSubscribed ? (
                 <span style={{ color: "white" }}>
-                  {userDetails.Email} Added to Listserv ✔️
+                  Added to Listserv ✔️
                 </span>
               ) : (
                 "Subscribe"

@@ -18,7 +18,10 @@ const Home = () => {
             <div className="w-3/5">
               <h1 className="text-2xl font-bold text-[#121A6A] mb-2">What is Hoohacks?</h1>
               <p className="pt-5 text-base text-gray-800 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula tortor a justo vehicula, non cursus magna consectetur. Sed aliquet massa nec urna aliquam, ac laoreet nunc tristique. Integer euismod, ligula ut aliquam fringilla, ipsum nulla viverra ligula, a bibendum nisl ante quis lacus. Nam cursus, purus vel pellentesque pharetra, purus quam fermentum lorem, a luctus orci nisl sit amet arcu. Fusce id sapien bibendum, pharetra eros id, tempus erat.
+              HooHacks is a student-run organization at the University of Virginia that fosters innovation and collaboration among students through technology. 
+        Each year, we host events that bring together hundreds of students to tackle real-world challenges, encouraging creativity and hands-on problem-solving.
+
+        We actively partner with industry leaders and student organizations to connect students with opportunities, foster collaboration, and inspire innovation.
               </p>
             </div>
             <div className="w-2/5 flex justify-center">
