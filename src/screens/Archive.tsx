@@ -4,7 +4,7 @@ import './Archive.css';  // Keep this import for the carousel CSS
 
 const Archive = () => {
   return (
-    <div className="flex flex-col items-center p-5 bg-gray-100 font-chakra-petch min-h-screen">
+    <div className="flex flex-col items-center p-5 bg-gray-100 font-chakra-petch min-h-screen pb-36 pt-10">
       {/* History Section */}
       <div className="bg-white p-16 rounded-lg mb-5 w-full max-w-3xl shadow-md border-l-4 border-[#121A6A]">
       <h1 className="text-xl md:text-2xl font-bold text-[#121A6A] mb-4 text-center">Our History</h1>
