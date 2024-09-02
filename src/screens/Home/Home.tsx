@@ -62,7 +62,7 @@ const Home = () => {
                         <div>
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel1-content" id="panel1-header">
-                                    <Typography className="text-[#121A6A]">Technology</Typography>
+                                    <Typography className="text-[#000000]">Technology</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -76,7 +76,7 @@ const Home = () => {
 
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel2-content" id="panel2-header">
-                                    <Typography className="text-[#121A6A]">Hacker Experience</Typography>
+                                    <Typography className="text-[#000000]">Hacker Experience</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -90,7 +90,7 @@ const Home = () => {
 
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel3-content" id="panel3-header">
-                                    <Typography className="text-[#121A6A]">Internal</Typography>
+                                    <Typography className="text-[#000000]">Internal</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -104,7 +104,7 @@ const Home = () => {
 
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel4-content" id="panel4-header">
-                                    <Typography className="text-[#121A6A]">Marketing</Typography>
+                                    <Typography className="text-[#000000]">Marketing</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -119,7 +119,7 @@ const Home = () => {
 
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel5-content" id="panel5-header">
-                                    <Typography className="text-[#121A6A]">Finance</Typography>
+                                    <Typography className="text-[#000000]">Finance</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
@@ -133,14 +133,14 @@ const Home = () => {
 
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel6-content" id="panel6-header">
-                                    <Typography className="text-[#121A6A]">Sponsorship</Typography>
+                                    <Typography className="text-[#000000]">Sponsorship</Typography>
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
                                         The Sponsorship Team is dedicated to building and maintaining relationships with
                                         corporate sponsors like Google, Microsoft, Capital One, and more to secure
                                         funding. They act as the primary point of contact for sponsors and organize
-                                        company-sponsored events throughout the Fall semester to enhance engagement and
+                                        company-sponsored events throughout year to enhance engagement and
                                         collaboration.
                                     </Typography>
                                 </AccordionDetails>

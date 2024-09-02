@@ -75,12 +75,12 @@ const JoinPage = () => {
         <div className="mb-7 text-center font-chakra-petch text-2xl font-bold pt-10">
           Fall Recruitment
         </div>
-        <div className="text-center mb-8 text-sm pt-10">
+        <div className="text-center text-[#000000] mb-8 text-sm pt-10">
 
         We seek passionate and creative individuals who are eager to learn, grow, and make a meaningful contribution to our team. We value diverse backgrounds and perspectives and encourage all students to apply, regardless of major or prior experience.
           
         </div>
-        <div className="text-center mb-8 text-sm pb-6">
+        <div className="text-center mb-8 text-sm pb-6 text-[#000000]">
           <b>
             Our Fall 2024 application is now open and will close on <u>September 6th</u>.
           </b>
@@ -96,11 +96,11 @@ const JoinPage = () => {
         <div className="text-2xl mb-2 font-chakra-petch font-bold pt-10 pb-6">
           Subscribe to our Newsletter!
         </div>
-        <div className="text-s mb-10">
+        <div className="text-s mb-10 text-[#000000]">
           Stay updated with everything HooHacks
         </div>
         <form className="w-full max-w-xs pb-20" onSubmit={handleSubscribe}>
-          <div className="flex flex-col mb-4">
+          <div className="flex flex-col mb-4 ">
             <label
               className="block text-sm font-bold mb-2"
               htmlFor="inline-full-name"
