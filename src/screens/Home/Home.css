@@ -1,8 +1,12 @@
-.colored-text{
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.colored-text {
     color: #121A6A;
 }
 
-.colored-container{
+.colored-container {
     color: #2837dd;
     background-color: #2837dd;
 }
