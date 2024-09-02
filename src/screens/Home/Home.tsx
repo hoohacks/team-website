@@ -4,6 +4,14 @@ import circleImage from "../../assets/sticker.png"; // Circular image (placehold
 import ideathonLogo from "../../assets/ideathonLogo.png"; // Ideathon logo
 import hoohacksLogoSmall from "../../assets/longhoohacks.png"; // Small HooHacks logo
 import teamPhoto from "../../assets/teamphoto.png"; // Team photo
+//accordion imports
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
+//css import
+import "./Home.css";
 
 const Home = () => {
   return (
@@ -54,14 +62,107 @@ const Home = () => {
         <div className="w-1/2 flex justify-between items-start pb-48">
           <div className="w-1/3">
             <h1 className="text-2xl font-bold text-[#121A6A] mb-4">HooHacks Team</h1>
-            <ul className="space-y-2 text-lg text-[#121A6A]">
-              <li>• Technology</li>
-              <li>• Hacker Experience</li>
-              <li>• Marketing</li>
-              <li>• Finance</li>
-              <li>• Sponsorship</li>
-            </ul>
+            <div>
+              <Accordion //className="colored-container"
+              >
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel1-content"
+                  id="panel1-header"
+                  //className="space-y-2 text-lg text-[#121A6A]"
+                >
+                  <Typography className="colored-text">• Technology</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel2-content"
+                  id="panel2-header"
+                >
+                  <Typography className="colored-text">• Hacker Experience</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel2-content"
+                  id="panel2-header"
+                >
+                  <Typography className="colored-text">• Hacker Experience</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel2-content"
+                  id="panel2-header"
+                >
+                  <Typography className="colored-text">• Marketing</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel2-content"
+                  id="panel2-header"
+                >
+                  <Typography className="colored-text">• Finance</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+
+              <Accordion>
+                <AccordionSummary
+                  expandIcon={<ArrowDropDownIcon />}
+                  aria-controls="panel2-content"
+                  id="panel2-header"
+                >
+                  <Typography className="colored-text">• Sponsorship</Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography className="colored-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+            </div>
           </div>
+
           <div className="w-2/3 pl-8">
             <img src={teamPhoto} alt="HooHacks Team" className="rounded-lg shadow-md" />
           </div>
