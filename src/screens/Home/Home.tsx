@@ -22,7 +22,7 @@ const Home = () => {
             {/* What is Hoohacks? */}
             <div className="w-full max-w-4xl flex flex-col md:flex-row justify-between items-start pb-24 md:pb-48">
                 <div className="w-full md:w-3/5">
-                    <h1 className="text-lg font-bold text-[#121A6A] mb-4">What is Hoohacks?</h1>
+                <h1 className="text-2xl font-bold text-[#121A6A] mb-4 pb-10">What is HooHacks?</h1>
                     <p className="pt-5 text-base text-gray-800 leading-relaxed">
                         HooHacks is a student-run organization at the University of Virginia that fosters innovation and
                         collaboration among students through technology.
@@ -41,13 +41,13 @@ const Home = () => {
             {/* Our Events */}
             <div className="w-full max-w-4xl pb-16 md:pb-32 text-center">
                 <h1 className="text-2xl md:text-3xl font-bold text-[#121A6A] mb-8">Our Events</h1>
-                <div className="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-10">
-                    <div className="w-full md:w-2/5">
+                <div className="flex flex-col md:flex-row justify-center items-center space-y-5 md:space-y-0 md:space-x-10 pt-10">
+                    <div className="w-full md:w-2/6">
                         <a href="https://ideathon.hoohacks.io/" target="_blank" rel="noopener noreferrer">
                             <img src={ideathonLogo} alt="Ideathon Logo" className="max-w-full h-auto" />
                         </a>
                     </div>
-                    <div className="w-full md:w-2/5 pt-4">
+                    <div className="w-full md:w-2/6 pt-4">
                         <a href="https://www.hoohacks.io/" target="_blank" rel="noopener noreferrer">
                             <img src={hoohacksLogoSmall} alt="HooHacks Logo" className="max-w-full h-auto" />
                         </a>
@@ -55,10 +55,10 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="w-full max-w-screen-lg mx-auto px-4 py-12">
+            <div className="w-full max-w-screen-lg mx-auto px-4 py-12 pb-40">
                 <div className="flex flex-col lg:flex-row justify-between items-start">
                     <div className="w-full lg:w-1/3 mb-8 lg:mb-0">
-                        <h1 className="text-2xl font-bold text-[#121A6A] mb-4">HooHacks Team</h1>
+                        <h1 className="text-2xl font-bold text-[#121A6A] mb-4 pb-10">HooHacks Team</h1>
                         <div>
                             <Accordion>
                                 <AccordionSummary expandIcon={<ArrowDropDownIcon />} aria-controls="panel1-content" id="panel1-header">
