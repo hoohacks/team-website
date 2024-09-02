@@ -9,7 +9,8 @@ import Archive from "./screens/Archive";
 
 function App() {
   return (
-    <>
+    
+    <div className="bg-gray-100 min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -18,7 +19,7 @@ function App() {
         <Route path="*" element={<NotFound />}></Route>
       </Routes>
       <Footer />
-    </>
+      </div>
   );
 }
 

@@ -9,16 +9,9 @@ const Archive = () => {
       <div className="history-section">
         <h1 className="history-title">Our History</h1>
         <p className="history-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. 
-        Cras vehicula tortor a justo vehicula, non cursus magna consectetur. Sed aliquet massa nec urna aliquam, ac laoreet nunc tristique. 
-        Integer euismod, ligula ut aliquam fringilla, ipsum nulla viverra ligula, a bibendum nisl ante quis lacus. Nam cursus, purus vel pellentesque pharetra, purus quam fermentum lorem, 
-        a luctus orci nisl sit amet arcu. Fusce id sapien bibendum, pharetra eros id, tempus erat.
-        </p>
-        <p className="history-text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula tortor a justo vehicula, non cursus magna consectetur. 
-        Sed aliquet massa nec urna aliquam, ac laoreet nunc tristique. Integer euismod, ligula ut aliquam fringilla, ipsum nulla viverra ligula, 
-        a bibendum nisl ante quis lacus. Nam cursus, purus vel pellentesque pharetra, purus quam fermentum lorem, a luctus orci nisl sit amet arcu. 
-        Fusce id sapien bibendum, pharetra eros id, tempus erat.
+        In the fall of 2013, a group of students founded HackUVA with the mission of fostering a culture of innovation and collaboration at the University of Virginia. They established committees for finance, sponsorship, and technology and hosted the university's first hackathon, attracting students and companies from across the nation. The event was a resounding success and has continued to grow each year. 
+        Eventually renamed HooHacks, it has become one of the University of Virginia's most significant and anticipated events, embodying the spirit of creativity and technological advancement.
+
         </p>
       </div>
 
