@@ -26,7 +26,10 @@ const Home = () => {
             <div className="w-3/5">
               <h1 className="text-2xl font-bold text-[#121A6A] mb-2">What is Hoohacks?</h1>
               <p className="pt-5 text-base text-gray-800 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras vehicula tortor a justo vehicula, non cursus magna consectetur. Sed aliquet massa nec urna aliquam, ac laoreet nunc tristique. Integer euismod, ligula ut aliquam fringilla, ipsum nulla viverra ligula, a bibendum nisl ante quis lacus. Nam cursus, purus vel pellentesque pharetra, purus quam fermentum lorem, a luctus orci nisl sit amet arcu. Fusce id sapien bibendum, pharetra eros id, tempus erat.
+              HooHacks is a student-run organization at the University of Virginia that fosters innovation and collaboration among students through technology. 
+        Each year, we host events that bring together hundreds of students to tackle real-world challenges, encouraging creativity and hands-on problem-solving.
+
+        We actively partner with industry leaders and student organizations to connect students with opportunities, foster collaboration, and inspire innovation.
               </p>
             </div>
             <div className="w-2/5 flex justify-center">
@@ -61,7 +64,7 @@ const Home = () => {
 
         <div className="w-1/2 flex justify-between items-start pb-48">
           <div className="w-1/3">
-            <h1 className="text-2xl font-bold text-[#121A6A] mb-4">HooHacks Team</h1>
+            <h1 className="text-2xl font-bold text-[#121A6A] mb-4 pb-10">HooHacks Team</h1>
             <div>
               <Accordion //className="colored-container"
               >
@@ -71,12 +74,11 @@ const Home = () => {
                   id="panel1-header"
                   //className="space-y-2 text-lg text-[#121A6A]"
                 >
-                  <Typography className="colored-text">• Technology</Typography>
+                  <Typography className="colored-text">Technology</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  The Technology Committee is responsible for HooHacks' software infrastructure, including building our website, developing participant registration systems, and engineering the project judging software to ensure a smooth experience for everyone involved.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -87,12 +89,12 @@ const Home = () => {
                   aria-controls="panel2-content"
                   id="panel2-header"
                 >
-                  <Typography className="colored-text">• Hacker Experience</Typography>
+                  <Typography className="colored-text">Hacker Experience</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  The Hacker Experience Team is responsible for organizing all aspects of the hackathon's logistics and operations. 
+                  They ensure the overall flow of the event runs smoothly, coordinating schedules, managing speaker and mentor outreach, and providing a seamless experience for all attendees.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -103,12 +105,11 @@ const Home = () => {
                   aria-controls="panel2-content"
                   id="panel2-header"
                 >
-                  <Typography className="colored-text">• Hacker Experience</Typography>
+                  <Typography className="colored-text">Internal</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  The Internal Committee is tasked with planning engaging social events, managing internal communication between the executive team and members, organizing meeting minutes and logistics, and fostering interdisciplinary skills across various committees to enhance team collaboration.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -119,12 +120,12 @@ const Home = () => {
                   aria-controls="panel2-content"
                   id="panel2-header"
                 >
-                  <Typography className="colored-text">• Marketing</Typography>
+                  <Typography className="colored-text">Marketing</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  The Marketing Committee is responsible for managing a mailing list of over 5,000 contacts, crafting the event's brand and content, and building the website. 
+                  They work with universities nationwide to recruit attendees and promote events through various channels, including flyers, digital marketing, and email campaigns.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -135,12 +136,12 @@ const Home = () => {
                   aria-controls="panel2-content"
                   id="panel2-header"
                 >
-                  <Typography className="colored-text">• Finance</Typography>
+                  <Typography className="colored-text">Finance</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                    
+The Finance Committee oversees the management of over $100K in corporate sponsorships, allocates funds for essential needs like food, transportation, and reimbursements, and interfaces directly with the UVA CS Financial Office to ensure smooth financial operations.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -151,12 +152,12 @@ const Home = () => {
                   aria-controls="panel2-content"
                   id="panel2-header"
                 >
-                  <Typography className="colored-text">• Sponsorship</Typography>
+                  <Typography className="colored-text">Sponsorship</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography className="colored-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
+                  The Sponsorship Team is dedicated to building and maintaining relationships with corporate sponsors like Google, Microsoft, Capital One, and more to secure funding. 
+                  They act as the primary point of contact for sponsors and organize company-sponsored events throughout the Fall semester to enhance engagement and collaboration.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
