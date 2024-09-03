@@ -1,7 +1,7 @@
 import React from "react";
 import placementImage from "../assets/hoohacks-placement.png";
 import './Archive.css';  // Keep this import for the carousel CSS
-import { sponsors } from '../modules/listOfSponsor';
+//import { sponsors } from '../modules/listOfSponsor';
 
 const Archive = () => {
   return (
