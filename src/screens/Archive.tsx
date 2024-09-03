@@ -1,6 +1,7 @@
 import React from "react";
 import placementImage from "../assets/hoohacks-placement.png";
 import './Archive.css';  // Keep this import for the carousel CSS
+import { sponsors } from '../modules/listOfSponsor';
 
 const Archive = () => {
   return (
@@ -33,41 +34,30 @@ const Archive = () => {
         HooHacks is made possible by the incredible support of our sponsors. Their generosity and dedication enable us to promote innovation and creativity annually. We are proud to have partnered with previous sponsors such as:
         </p>
 
-        {/* First Carousel Row */}
-        <div className="sponsors-carousel">
+                {/* First Carousel Row */}
+                <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row1-${index}`}></div>
+            {sponsors.map((sponsor, index) => (
+              <div className='sponsor-logo' key={`row1-${index}`}>
+              <img
+              src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+              alt={sponsor.name}
+              />
+              </div>
             ))}
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row1-dup-${index}`}></div>
+            {sponsors.map((sponsor, index) => (
+              <div className="sponsor-logo" key={`row1-dup-${index}`}>
+                <img
+                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
+                alt={sponsor.name}
+                />
+              </div>
             ))}
           </div>
         </div>
 
-        {/* Second Carousel Row */}
-        <div className="sponsors-carousel">
-          <div className="sponsors-track">
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row2-${index}`}></div>
-            ))}
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row2-dup-${index}`}></div>
-            ))}
-          </div>
-        </div>
 
-        {/* Third Carousel Row */}
-        <div className="sponsors-carousel">
-          <div className="sponsors-track">
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row3-${index}`}></div>
-            ))}
-            {[...Array(8)].map((_, index) => (
-              <div className="sponsor-logo" key={`row3-dup-${index}`}></div>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </div>
   );
