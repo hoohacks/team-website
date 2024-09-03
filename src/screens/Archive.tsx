@@ -27,39 +27,16 @@ const Archive = () => {
         <img src={placementImage} alt="Placement Companies" className="w-full h-auto max-w-4xl mx-auto rounded-md shadow-sm" />
       </div>
 
-      {/* Sponsors Section */}
-      <div className="bg-white p-8 rounded-lg w-full max-w-3xl shadow-md text-center border-l-4 border-[#87A2FC]">
-        <h3 className="text-lg md:text-xl font-bold text-[#121A6A] mb-3">Our Sponsors</h3>
-        <p className="text-sm md:text-base text-[#000000] mb-4 pb-10">
-        HooHacks is made possible by the incredible support of our sponsors. Their generosity and dedication enable us to promote innovation and creativity annually. We are proud to have partnered with previous sponsors such as:
-        </p>
+    
 
-                {/* First Carousel Row */}
-                <div className="sponsors-carousel">
-          <div className="sponsors-track">
-            {sponsors.map((sponsor, index) => (
-              <div className='sponsor-logo' key={`row1-${index}`}>
-              <img
-              src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
-              alt={sponsor.name}
-              />
-              </div>
-            ))}
-            {sponsors.map((sponsor, index) => (
-              <div className="sponsor-logo" key={`row1-dup-${index}`}>
-                <img
-                src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
-                alt={sponsor.name}
-                />
-              </div>
-            ))}
-          </div>
-        </div>
 
+
+
+     
+        
 
         
       </div>
-    </div>
   );
 };
 
