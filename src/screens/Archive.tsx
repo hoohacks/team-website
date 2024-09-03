@@ -48,12 +48,11 @@ const Archive = () => {
         {/* First Carousel Row */}
         <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {sponsors.slice(1,4).map((sponsor, index) => (
+            {sponsors.map((sponsor, index) => (
               <div className='sponsor-logo' key={`row1-${index}`}>
               <img
               src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
               alt={sponsor.name}
-              className='sponsor-logo'
               />
               </div>
             ))}
@@ -62,7 +61,6 @@ const Archive = () => {
                 <img
                 src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
                 alt={sponsor.name}
-                className='sponsor-logo'
                 />
               </div>
             ))}
@@ -72,21 +70,19 @@ const Archive = () => {
         {/* Second Carousel Row */}
         <div className="sponsors-carousel">
           <div className="sponsors-track">
-            {sponsors.slice(0,3).map((sponsor, index) => (
+            {sponsors.map((sponsor, index) => (
                 <div className='sponsor-logo' key={`row2-${index}`}>
                 <img
                 src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
                 alt={sponsor.name}
-                className='sponsor-logo'
                 />
                 </div>
             ))}
-            {sponsors.slice(4,8).map((sponsor, index) => (
+            {sponsors.map((sponsor, index) => (
               <div className='sponsor-logo' key={`row2-dup-${index}`} >
                 <img
                 src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
                 alt={sponsor.name}
-                className='sponsor-logo'
                 />
               </div>
             ))}
@@ -101,7 +97,6 @@ const Archive = () => {
                 <img
                 src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
                 alt={sponsor.name}
-                className='sponsor-logo'
                 />
               </div>
             ))}
@@ -110,7 +105,6 @@ const Archive = () => {
                 <img
                 src={`${process.env.PUBLIC_URL}${sponsor.logo}`}
                 alt={sponsor.name}
-                className='sponsor-logo'
                 />
               </div>
             ))}

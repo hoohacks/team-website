@@ -101,7 +101,7 @@
 
   .sponsors-track {
     display: flex;
-    border: hidden;
+    border:hidden ;
     animation: scroll 30s linear infinite;
     width: fit-content; /* Ensures the track can be wide enough to fit all logos */
   }
@@ -109,10 +109,27 @@
   .sponsor-logo {
     width: 180px; /* Larger sponsor logos */
     height: 100px; /* Larger height for logos */
-    background-color: #ffffff; /* Grey placeholder for sponsor logos */
-    border-radius: 0px;
-    border: hidden;
+    background-color: white; /* Grey placeholder for sponsor logos */
     margin: 0 15px; /* Adjusted margin for larger logos */
+    border: 2px solid #121A6A; /* Dark blue border for logos */
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white; /* Light background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    display: inline-block;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center; /* Centers the image horizontally in the box */
+    align-items: center; /* Centers the image vertically in the box */
+    width: 250px; /* Set a fixed width for the box */
+    height: 100px; /* Set a fixed height for the box */
+    box-sizing: border-box;
+  }
+
+  .sponsor-logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   /* Animation for scrolling sponsor logos */
