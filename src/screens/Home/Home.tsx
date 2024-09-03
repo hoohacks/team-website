@@ -24,8 +24,7 @@ const Home = () => {
                 <div className="w-full md:w-3/5">
                 <h1 className="text-2xl font-bold text-[#121A6A] mb-4 pb-10">What is HooHacks?</h1>
                     <p className="pt-5 text-base text-gray-800 leading-relaxed">
-                        HooHacks is a student-run organization at the University of Virginia that fosters innovation and
-                        collaboration among students through technology.
+                        HooHacks is a student-run organization at the University of Virginia.
                         Each year, we host events that bring together hundreds of students to tackle real-world
                         challenges, encouraging creativity and hands-on problem-solving.
 
@@ -80,8 +79,7 @@ const Home = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
-                                        The Hacker Experience Team is responsible for organizing all aspects of the
-                                        hackathon's logistics and operations. They ensure the overall flow of the event
+                                        The Hacker Experience Committee is responsible for organizing all aspects of our event's logistics and operations. They ensure the overall flow of the event
                                         runs smoothly, coordinating schedules, managing speaker and mentor outreach, and
                                         providing a seamless experience for all attendees.
                                     </Typography>
@@ -94,7 +92,7 @@ const Home = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
-                                        The Internal Committee is tasked with planning engaging social events, managing
+                                        The Internal Committee is tasked with planning social events, managing
                                         internal communication between the executive team and members, organizing
                                         meeting minutes and logistics, and fostering interdisciplinary skills across
                                         various committees to enhance team collaboration.
@@ -108,8 +106,7 @@ const Home = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
-                                        The Marketing Committee is responsible for managing a mailing list of over 5,000
-                                        contacts, crafting the event's brand and content, and building the website. They
+                                        The Marketing Committee is responsible for crafting the event's brand and content and building our websites. They
                                         work with universities nationwide to recruit attendees and promote events
                                         through various channels, including flyers, digital marketing, and email
                                         campaigns.
@@ -124,9 +121,7 @@ const Home = () => {
                                 <AccordionDetails>
                                     <Typography>
                                         The Finance Committee oversees the management of over $100K in corporate
-                                        sponsorships, allocates funds for essential needs like food, transportation, and
-                                        reimbursements, and interfaces directly with the UVA CS Financial Office to
-                                        ensure smooth financial operations.
+                                        sponsorships, allocates funds our events throughout the year.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
@@ -137,11 +132,10 @@ const Home = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography>
-                                        The Sponsorship Team is dedicated to building and maintaining relationships with
+                                        The Sponsorship Committee is dedicated to building and maintaining relationships with
                                         corporate sponsors like Google, Microsoft, Capital One, and more to secure
                                         funding. They act as the primary point of contact for sponsors and organize
-                                        company-sponsored events throughout year to enhance engagement and
-                                        collaboration.
+                                        company-sponsored events throughout year.
                                     </Typography>
                                 </AccordionDetails>
                             </Accordion>
