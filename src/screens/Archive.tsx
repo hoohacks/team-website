@@ -66,8 +66,8 @@ const Archive = () => {
             ))}
           </div>
         </div>
-
-        {/* Second Carousel Row */}
+        
+        {/*
         <div className="sponsors-carousel">
           <div className="sponsors-track">
             {sponsors.map((sponsor, index) => (
@@ -88,8 +88,10 @@ const Archive = () => {
             ))}
           </div>
         </div>
+        */}
 
         {/* Third Carousel Row */}
+        {/*
         <div className="sponsors-carousel">
           <div className="sponsors-track">
             {sponsors.map((sponsor, index) => (
@@ -110,6 +112,7 @@ const Archive = () => {
             ))}
           </div>
         </div>
+        */}
       </div>
     </div>
   );
