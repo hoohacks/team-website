@@ -1,5 +1,5 @@
 import React from "react";
-import hoohacksLogo from "../../assets/hoohacks_website_logo.gif";
+import hoohacksLogo from "../../assets/animatedLogoHoo.gif";
 import circleImage from "../../assets/circleLogo.png";
 import ideathonLogo from "../../assets/ideathonLogo.png";
 import hoohacksLogoSmall from "../../assets/longhoohacks.png";
@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div className="flex flex-col items-center w-full px-4 sm:px-6 md:px-8 lg:px-16">
             {/* Main Logo */}
-            <div className="w-full max-w-4xl mx-auto flex justify-center items-center pb-12 md:pb-48">
+            <div className="w-full max-w-6xl mx-auto flex justify-center items-center pb-12 md:pb-48">
                 <img src={hoohacksLogo} alt="HooHacks Main Logo" className="max-w-full h-auto" />
             </div>
 
