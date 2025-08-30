@@ -20,7 +20,7 @@ export default function Join() {
                             <a href="https://forms.cloud.microsoft/r/jXLg61qRTb">
                                 <button
                                     className="w-40 px-6 py-3 rounded-lg bg-[#B1CCFF] text-black font-semibold hover:bg-blue-500 transition">
-                                    Join
+                                    Apply
                                 </button>
                             </a>
                         </div>
