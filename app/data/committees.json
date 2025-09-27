@@ -22,5 +22,9 @@
     {
         "name": "Internal",
         "description": "Plans and coordinates social events for the entire board, fostering engagement, collaboration, and a sense of community."
+    },
+    {
+        "name": "Initiates",
+        "description": "New people on the block."
     }
 ]

@@ -85,5 +85,18 @@
         "image": "/headshots/jay.png"
       }
     ]
+  },
+  {
+    "committee": "Initiates",
+    "members": [
+      {
+        "name": "Jahleel Jackson",
+        "image": "/headshots/jahleel.jpg"
+      },
+      {
+        "name": "Julia Chen",
+        "image": "/headshots/julia.png"
+      }
+    ]
   }
 ]
