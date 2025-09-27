@@ -94,11 +94,18 @@ export default function Team() {
                                         key={i}
                                         className="flex flex-col items-center text-center space-y-2"
                                     >
-                                        <img
-                                            src={member.image}
-                                            alt={member.name}
-                                            className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400"
-                                        />
+                                        {/* Flipping the card */}
+                                        <div className="relative group">
+                                            <img
+                                                src={member.image}
+                                                alt={member.name}
+                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 group-hover:rotate-y-90 transition-all duration-200"
+                                            />
+                                            <div className="w-45 h-50 bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
+                                                <p>Fun fact</p>
+                                            </div>
+                                        </div>
+
                                         <p className="font-medium">{member.name}</p>
                                         <p className="text-sm text-gray-400">{c.committee}</p>
                                     </div>
