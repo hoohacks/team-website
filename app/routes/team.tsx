@@ -71,14 +71,22 @@ export default function Team() {
                                 key="0"
                                 className="flex flex-col items-center text-center space-y-2"
                             >
-                                <img
-                                    src={teamData[0].members[0].image}
-                                    alt={teamData[0].members[0].name}
-                                    className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400"
-                                />
+
+
+                                 {/* Flipping the card */}
+                                        <div className="relative group">
+                                            <img
+                                                src={teamData[0].members[0].image}
+                                                alt={teamData[0].members[0].name}
+                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 group-hover:rotate-y-90 transition-all duration-200"                                            />
+                                            <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
+                                                <p>{teamData[0].members[0].fact}</p>
+                                            </div>
+                                
                                 <p className="font-medium">{teamData[0].members[0].name}</p>
                                 <p className="text-sm text-gray-400">{teamData[0].committee}</p>
                             </div>
+                        </div>
                         </div>
                     </section>
                     {teamData.map((c) => (
