@@ -101,8 +101,8 @@ export default function Team() {
                                                 alt={member.name}
                                                 className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 group-hover:rotate-y-90 transition-all duration-200"
                                             />
-                                            <div className="w-45 h-50 bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
-                                                <p>Fun fact</p>
+                                            <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
+                                                <p>{member.fact}</p>
                                             </div>
                                         </div>
 

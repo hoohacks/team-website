@@ -4,7 +4,8 @@
     "members": [
       {
         "name": "Austin Trinh",
-        "image": "/headshots/austin.jpg"
+        "image": "/headshots/austin.jpg",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -13,11 +14,13 @@
     "members": [
       {
         "name": "Urav Tanna",
-        "image": "/headshots/urav.jpg"
+        "image": "/headshots/urav.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Diana Lin",
-        "image": "/headshots/diana.jpg"
+        "image": "/headshots/diana.jpg",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -26,11 +29,13 @@
     "members": [
       {
         "name": "Courtney Rodig",
-        "image": "/headshots/courtney.jpg"
+        "image": "/headshots/courtney.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Christian Min",
-        "image": "/headshots/christian.png"
+        "image": "/headshots/christian.png",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -39,11 +44,13 @@
     "members": [
       {
         "name": "Aryaa Deshpande",
-        "image": "/headshots/aryaa.jpg"
+        "image": "/headshots/aryaa.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Richard Do",
-        "image": "/headshots/richard.jpg"
+        "image": "/headshots/richard.jpg",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -52,11 +59,13 @@
     "members": [
       {
         "name": "Malisha Das",
-        "image": "/headshots/malisha.jpg"
+        "image": "/headshots/malisha.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Jamar Oldacre",
-        "image": "/headshots/jamar.jpg"
+        "image": "/headshots/jamar.jpg",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -65,11 +74,13 @@
     "members": [
       {
         "name": "Salonee Verma",
-        "image": "/headshots/salonee.jpg"
+        "image": "/headshots/salonee.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Christy Lee",
-        "image": "/headshots/christy.jpg"
+        "image": "/headshots/christy.jpg",
+        "fact": "Placeholder"
       }
     ]
   },
@@ -78,11 +89,13 @@
     "members": [
       {
         "name": "Christine Han",
-        "image": "/headshots/christine.jpg"
+        "image": "/headshots/christine.jpg",
+        "fact": "Placeholder"
       },
       {
         "name": "Jay Sikka",
-        "image": "/headshots/jay.png"
+        "image": "/headshots/jay.png",
+        "fact": "Placeholder"
       }
     ]
   }
