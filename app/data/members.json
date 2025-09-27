@@ -19,6 +19,21 @@
         "name": "Diana Lin",
         "image": "/headshots/diana.jpg"
       }
+      
+    ]
+  },
+  {
+    "committee": "Technology Newbies",
+    "members": [
+      {
+        "name": "Chris Currie",
+        "image": "/headshots/Chris.jpg"
+      },
+      {
+        "name": "Colin Park",
+        "image": "/headshots/Colin.jpg"
+      }
+      
     ]
   },
   {
