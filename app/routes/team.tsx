@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Navbar from "../navbar";
-import teamData from 'app/data/members.json'
+import teamData from "app/data/members.json";
 import Footer from "~/footer/footer";
 
 // JSON-like data for all committees
@@ -31,8 +31,6 @@ export default function Team() {
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
-
-
     return (
         <div>
             <div className="flex min-h-screen bg-transparent text-white mx-0 sm:mx-20 my-30">
@@ -45,10 +43,11 @@ export default function Team() {
                             <li key={c.committee}>
                                 <a
                                     href={`#${c.committee}`}
-                                    className={`block transition ${active === c.committee
-                                        ? "text-blue-400 font-bold"
-                                        : "text-gray-400 hover:text-white"
-                                        }`}
+                                    className={`block transition ${
+                                        active === c.committee
+                                            ? "text-blue-400 font-bold"
+                                            : "text-gray-400 hover:text-white"
+                                    }`}
                                 >
                                     {c.committee}
                                 </a>
@@ -57,10 +56,11 @@ export default function Team() {
                     </ul>
                 </aside>
 
-
                 {/* Main content */}
                 <main className="flex-1 p-1 space-y-24">
-                    <h1 className="text-5xl font-bold text-center mb-12">Meet The Team</h1>
+                    <h1 className="text-5xl font-bold text-center mb-12">
+                        Meet The Team
+                    </h1>
                     <section
                         key="President"
                         id="President"
@@ -71,67 +71,76 @@ export default function Team() {
                                 key="0"
                                 className="flex flex-col items-center text-center space-y-2"
                             >
+                                {/* Flipping the card */}
+                                <div className="relative group [perspective:100rem]  ">
+                                    <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                        <img
+                                            src={teamData[0].members[0].image}
+                                            alt={teamData[0].members[0].name}
+                                            className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
+                                        />
+                                        <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                            <p>{teamData[0].members[0].fact}</p>
+                                        </div>
+                                    </div>
 
-
-                                 {/* Flipping the card */}
-                            <div className="relative group [perspective:100rem]  ">
-                                            <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
-                                                <img
-                                                    src={teamData[0].members[0].image}
-                                                    alt={teamData[0].members[0].name}
-                                                    className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "                                    
-                                                />
-                                                <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                                                    <p>{teamData[0].members[0].fact}</p>
-                                                </div>
-                                            </div>
-                                
-                                <p className="font-medium">{teamData[0].members[0].name}</p>
-                                <p className="text-sm text-gray-400">{teamData[0].committee}</p>
+                                    <p className="font-medium">
+                                        {teamData[0].members[0].name}
+                                    </p>
+                                    <p className="text-sm text-gray-400">
+                                        {teamData[0].committee}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
                         </div>
                     </section>
-                    {teamData.map((c) => (
-                        c.committee != "President" ?
-                        <section
-                            key={c.committee}
-                            id={c.committee}
-                            className="scroll-mt-20"
-                        >
-                            <div className={`grid grid-cols-1 md:grid-cols-2 mb-40`}>
-                                {c.members.map((member, i) => (
-                                    <div
-                                        key={i}
-                                        className="flex flex-col items-center text-center space-y-2"
-                                    >
-                                        {/* Flipping the card */}
+                    {teamData.map((c) =>
+                        c.committee != "President" ? (
+                            <section
+                                key={c.committee}
+                                id={c.committee}
+                                className="scroll-mt-20"
+                            >
+                                <div
+                                    className={`grid grid-cols-1 md:grid-cols-2 mb-40`}
+                                >
+                                    {c.members.map((member, i) => (
+                                        <div
+                                            key={i}
+                                            className="flex flex-col items-center text-center space-y-2"
+                                        >
+                                            {/* Flipping the card */}
 
-                                        <div className="relative group [perspective:100rem]  ">
-                                            <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
-                                                <img 
-                                                src={member.image}
-                                                alt={member.name}
-                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
-                                                />
-                                                <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0  [backface-visibility:hidden] [transform:rotateY(180deg)]">
-                                                    <p>{member.fact}</p>
+                                            <div className="relative group [perspective:100rem]  ">
+                                                <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                                    <img
+                                                        src={member.image}
+                                                        alt={member.name}
+                                                        className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
+                                                    />
+                                                    <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0  [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                                        <p>{member.fact}</p>
+                                                    </div>
                                                 </div>
-                                             </div>
-                                            
+                                            </div>
+
+                                            <p className="font-medium">
+                                                {member.name}
+                                            </p>
+                                            <p className="text-sm text-gray-400">
+                                                {c.committee}
+                                            </p>
                                         </div>
-
-                                        <p className="font-medium">{member.name}</p>
-                                        <p className="text-sm text-gray-400">{c.committee}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </section> : ""
-                    ))}
+                                    ))}
+                                </div>
+                            </section>
+                        ) : (
+                            ""
+                        )
+                    )}
                 </main>
-
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }
