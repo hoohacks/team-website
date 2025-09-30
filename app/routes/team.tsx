@@ -74,13 +74,16 @@ export default function Team() {
 
 
                                  {/* Flipping the card */}
-                                        <div className="relative group">
-                                            <img
-                                                src={teamData[0].members[0].image}
-                                                alt={teamData[0].members[0].name}
-                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 group-hover:rotate-y-90 transition-all duration-200"                                            />
-                                            <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
-                                                <p>{teamData[0].members[0].fact}</p>
+                            <div className="relative group [perspective:100rem]  ">
+                                            <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                                <img
+                                                    src={teamData[0].members[0].image}
+                                                    alt={teamData[0].members[0].name}
+                                                    className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "                                    
+                                                />
+                                                <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                                    <p>{teamData[0].members[0].fact}</p>
+                                                </div>
                                             </div>
                                 
                                 <p className="font-medium">{teamData[0].members[0].name}</p>
@@ -103,15 +106,19 @@ export default function Team() {
                                         className="flex flex-col items-center text-center space-y-2"
                                     >
                                         {/* Flipping the card */}
-                                        <div className="relative group">
-                                            <img
+
+                                        <div className="relative group [perspective:100rem]  ">
+                                            <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                                <img 
                                                 src={member.image}
                                                 alt={member.name}
-                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 group-hover:rotate-y-90 transition-all duration-200"
-                                            />
-                                            <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute top-0 -rotate-y-270 group-hover:-rotate-y-360 transition-all duration-200 delay-200">
-                                                <p>{member.fact}</p>
-                                            </div>
+                                                className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
+                                                />
+                                                <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0  [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                                    <p>{member.fact}</p>
+                                                </div>
+                                             </div>
+                                            
                                         </div>
 
                                         <p className="font-medium">{member.name}</p>
