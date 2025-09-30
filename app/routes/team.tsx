@@ -33,7 +33,7 @@ export default function Team() {
 
     return (
         <div>
-            <div className="flex min-h-screen bg-transparent text-white mx-0 sm:mx-20 my-30">
+            <div className="flex min-h-screen bg-transparent text-white mx-0 sm:mx-20 py-30">
                 <Navbar />
 
                 {/* Sidebar */}
