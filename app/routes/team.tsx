@@ -72,25 +72,24 @@ export default function Team() {
                                 className="flex flex-col items-center text-center space-y-2"
                             >
                                 {/* Flipping the card */}
-                                <div className="relative group [perspective:100rem]  ">
-                                    <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                <div className="relative group [perspective:100rem] group-hover:shadow">
+                                    <div className="[transform-style:preserve-3d] rounded-xl group-hover:[transform:rotateY(180deg)] group-hover:shadow-2xl group-hover:shadow-blue-400/30 transition-all duration-400 ease-in-out">
                                         <img
                                             src={teamData[0].members[0].image}
                                             alt={teamData[0].members[0].name}
                                             className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
                                         />
-                                        <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                        <div className="w-45 h-50 flex justify-center items-center bg-blue-800 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                                             <p>{teamData[0].members[0].fact}</p>
                                         </div>
                                     </div>
-
-                                    <p className="font-medium">
-                                        {teamData[0].members[0].name}
-                                    </p>
-                                    <p className="text-sm text-gray-400">
-                                        {teamData[0].committee}
-                                    </p>
                                 </div>
+                                <p className="font-medium">
+                                    {teamData[0].members[0].name}
+                                </p>
+                                <p className="text-sm text-gray-400">
+                                    {teamData[0].committee}
+                                </p>
                             </div>
                         </div>
                     </section>
@@ -112,13 +111,13 @@ export default function Team() {
                                             {/* Flipping the card */}
 
                                             <div className="relative group [perspective:100rem]  ">
-                                                <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] transition-all duration-500">
+                                                <div className="[transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] group-hover:shadow-2xl group-hover:shadow-blue-400/30 rounded-xl transition-all duration-500">
                                                     <img
                                                         src={member.image}
                                                         alt={member.name}
                                                         className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400 "
                                                     />
-                                                    <div className="w-45 h-50 flex justify-center items-center bg-blue-500 rounded-xl border-2 border-blue-400 absolute inset-0  [backface-visibility:hidden] [transform:rotateY(180deg)]">
+                                                    <div className="w-45 h-50 flex justify-center items-center bg-blue-800 rounded-xl border-2 border-blue-400 absolute inset-0 [backface-visibility:hidden] [transform:rotateY(180deg)]">
                                                         <p>{member.fact}</p>
                                                     </div>
                                                 </div>
