@@ -4,9 +4,7 @@
     "members": [
       {
         "name": "Austin Trinh",
-        "image": "/headshots/austin.jpg",
-        "role": "To be developing weapon",
-        "bio": "..." 
+        "image": "/headshots/austin.jpg"
       }
     ]
   },
@@ -15,15 +13,11 @@
     "members": [
       {
         "name": "Urav Tanna",
-        "image": "/headshots/urav.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/urav.jpg"
       },
       {
         "name": "Diana Lin",
-        "image": "/headshots/diana.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/diana.jpg"
       }
     ]
   },
@@ -32,15 +26,11 @@
     "members": [
       {
         "name": "Courtney Rodig",
-        "image": "/headshots/courtney.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/courtney.jpg"
       },
       {
         "name": "Christian Min",
-        "image": "/headshots/christian.png",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/christian.png"
       }
     ]
   },
@@ -49,15 +39,11 @@
     "members": [
       {
         "name": "Aryaa Deshpande",
-        "image": "/headshots/aryaa.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/aryaa.jpg"
       },
       {
         "name": "Richard Do",
-        "image": "/headshots/richard.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/richard.jpg"
       }
     ]
   },
@@ -66,15 +52,11 @@
     "members": [
       {
         "name": "Malisha Das",
-        "image": "/headshots/malisha.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/malisha.jpg"
       },
       {
         "name": "Jamar Oldacre",
-        "image": "/headshots/jamar.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/jamar.jpg"
       }
     ]
   },
@@ -83,15 +65,11 @@
     "members": [
       {
         "name": "Salonee Verma",
-        "image": "/headshots/salonee.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/salonee.jpg"
       },
       {
         "name": "Christy Lee",
-        "image": "/headshots/christy.jpg",
-        "role": "To be developing weapon",
-        "bio": "..."
+        "image": "/headshots/christy.jpg"
       }
     ]
   },
@@ -100,32 +78,11 @@
     "members": [
       {
         "name": "Christine Han",
-         "image": "/headshots/christine.jpg",
-         "role": "To be developing weapon",
-         "bio": "..."
+        "image": "/headshots/christine.jpg"
       },
       {
         "name": "Jay Sikka",
-        "image": "/headshots/jay.png",
-        "role": "To be developing weapon",
-        "bio": "..."
-      }
-    ]
-  },
-  {
-    "committee": "Initiates",
-    "members": [
-      {
-        "name": "Jahleel Jackson",
-        "image": "/headshots/jahleel.jpg",
-        "role": "Submit PRs full of errors",
-        "bio": "..."
-      },
-      {
-        "name": "Julia Chen",
-        "image": "/headshots/julia.jpg",
-        "role": "Clean up Jahleel's errors and actually contribute",
-        "bio": "..."
+        "image": "/headshots/jay.png"
       }
     ]
   }
