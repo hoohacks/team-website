@@ -62,21 +62,33 @@ export default function Team() {
             Meet The Team
           </h1>
           <section key="President" id="President" className="scroll-mt-20">
-            <div className={`grid grid-cols-1 mb-40`}>
-              <div
-                key="0"
-                className="flex flex-col items-center text-center space-y-2"
-              >
-                <img
-                  src={teamData[0].members[0].image}
-                  alt={teamData[0].members[0].name}
-                  className="w-45 h-50 object-cover rounded-xl border-2 border-blue-400"
-                />
-                <p className="font-medium">{teamData[0].members[0].name}</p>
-                <p className="text-sm text-gray-400">{teamData[0].committee}</p>
+            <div className={`grid grid-cols-1 mb-40 justify-items-center`}>
+                <div key="0" className="flip-card w-60 h-72 m-4">
+                  <div className="flip-card-inner">
+                    {/* Front */}
+                    <div className="flip-card-front flex flex-col items-center text-center p-4 bg-gray-900 border-2 border-blue-400 rounded-xl">
+                      <img
+                        src={teamData[0].members[0].image}
+                        alt={teamData[0].members[0].name}
+                        className="w-40 h-44 object-cover rounded-xl mb-2"
+                      />
+                      <p className="font-medium">{teamData[0].members[0].name}</p>
+                      <p className="text-sm text-gray-400">{teamData[0].committee}</p>
+                    </div>
+
+
+                    {/* Back */}
+                    <div className="flip-card-back flex flex-col items-center justify-center p-4 bg-blue-900 border-2 border-blue-400 rounded-xl">
+                      <p className="font-bold text-lg">{teamData[0].members[0].name}</p>
+                      <p className="text-sm">{teamData[0].members[0].role}</p>
+                      <p className="text-xs text-gray-300 mt-2">
+                        {teamData[0].members[0].bio}
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </section>
+            </section>
           {teamData.map((c) =>
             c.committee != "President" ? (
               <section
