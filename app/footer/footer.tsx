@@ -36,7 +36,7 @@ export default function Footer() {
                 }
             </div>
             <div className="font-light">
-                @ 2025 HooHacks ~ Made in Charlottesville
+                @ {new Date().getFullYear()} HooHacks ~ Made in Charlottesville
             </div>
         </div>
     );
