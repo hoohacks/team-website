@@ -2,7 +2,7 @@ import SectionHeader from "./components/SectionHeader";
 import Reveal from "./components/Reveal";
 import sponsors from "./data/sponsors.json";
 
-type Sponsor = { name: string; logo: string; website: string };
+type Sponsor = { name: string; logo: string; website: string; scale?: number };
 
 /**
  * Seamless marquee row: the strip is rendered twice and the track translates
@@ -23,7 +23,7 @@ function SponsorRow({ items, reverse = false, duration }: { items: Sponsor[]; re
                         className="block rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B1CCFF]"
                     >
                         <div className="w-60 h-25 px-8 py-4 rounded-xl bg-white transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-[0_16px_32px_-16px_rgba(0,4,45,0.8)]">
-                            <img src={sponsor.logo} alt={sponsor.name} loading="lazy" className="w-full h-full object-contain" />
+                            <img src={sponsor.logo} alt={sponsor.name} loading="lazy" className="w-full h-full object-contain" style={sponsor.scale ? { transform: `scale(${sponsor.scale})` } : undefined} />
                         </div>
                     </a>
                 </li>

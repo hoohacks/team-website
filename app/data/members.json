@@ -1,15 +1,21 @@
-﻿[
+[
   {
     "committee": "President",
+    "role": "President",
     "members": [
       {
         "name": "Austin Trinh",
         "image": "/headshots/austin.webp"
+      },
+      {
+        "name": "Coming Soon",
+        "image": ""
       }
     ]
   },
   {
     "committee": "Technology",
+    "role": "Chair",
     "members": [
       {
         "name": "Urav Tanna",
@@ -19,10 +25,12 @@
         "name": "Diana Lin",
         "image": "/headshots/diana.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4", "Member 5", "Member 6"]
   },
   {
     "committee": "Finance",
+    "role": "Chair",
     "members": [
       {
         "name": "Courtney Rodig",
@@ -32,10 +40,12 @@
         "name": "Christian Min",
         "image": "/headshots/christian.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4"]
   },
   {
     "committee": "Marketing",
+    "role": "Chair",
     "members": [
       {
         "name": "Aryaa Deshpande",
@@ -45,10 +55,12 @@
         "name": "Richard Do",
         "image": "/headshots/richard.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4", "Member 5"]
   },
   {
     "committee": "Sponsorship",
+    "role": "Chair",
     "members": [
       {
         "name": "Malisha Das",
@@ -58,10 +70,12 @@
         "name": "Jamar Oldacre",
         "image": "/headshots/jamar.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4"]
   },
   {
     "committee": "Hacker Experience",
+    "role": "Chair",
     "members": [
       {
         "name": "Salonee Verma",
@@ -71,10 +85,12 @@
         "name": "Christy Lee",
         "image": "/headshots/christy.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4", "Member 5"]
   },
   {
     "committee": "Internal",
+    "role": "Chair",
     "members": [
       {
         "name": "Christine Han",
@@ -84,6 +100,7 @@
         "name": "Jay Sikka",
         "image": "/headshots/jay.webp"
       }
-    ]
+    ],
+    "general": ["Member 1", "Member 2", "Member 3", "Member 4"]
   }
 ]

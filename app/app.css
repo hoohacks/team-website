@@ -5,14 +5,17 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html,
-body {
+/* Gradient lives on <html> only. Painting it on both html and body meant a
+   collapsed top margin (e.g. the team page) could offset the body's copy and
+   leave a visible seam near the top; a single background can't seam. */
+html {
   background: linear-gradient(180deg, #000824 0%, #121A6A 100%);
   min-height: 100vh;
   color-scheme: dark;
 }
 
 body {
+  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
