@@ -1,10 +1,10 @@
-[
+﻿[
   {
     "committee": "President",
     "members": [
       {
         "name": "Austin Trinh",
-        "image": "/headshots/austin.jpg"
+        "image": "/headshots/austin.webp"
       }
     ]
   },
@@ -13,11 +13,11 @@
     "members": [
       {
         "name": "Urav Tanna",
-        "image": "/headshots/urav.jpg"
+        "image": "/headshots/urav.webp"
       },
       {
         "name": "Diana Lin",
-        "image": "/headshots/diana.jpg"
+        "image": "/headshots/diana.webp"
       }
     ]
   },
@@ -26,11 +26,11 @@
     "members": [
       {
         "name": "Courtney Rodig",
-        "image": "/headshots/courtney.jpg"
+        "image": "/headshots/courtney.webp"
       },
       {
         "name": "Christian Min",
-        "image": "/headshots/christian.png"
+        "image": "/headshots/christian.webp"
       }
     ]
   },
@@ -39,11 +39,11 @@
     "members": [
       {
         "name": "Aryaa Deshpande",
-        "image": "/headshots/aryaa.jpg"
+        "image": "/headshots/aryaa.webp"
       },
       {
         "name": "Richard Do",
-        "image": "/headshots/richard.jpg"
+        "image": "/headshots/richard.webp"
       }
     ]
   },
@@ -52,11 +52,11 @@
     "members": [
       {
         "name": "Malisha Das",
-        "image": "/headshots/malisha.jpg"
+        "image": "/headshots/malisha.webp"
       },
       {
         "name": "Jamar Oldacre",
-        "image": "/headshots/jamar.jpg"
+        "image": "/headshots/jamar.webp"
       }
     ]
   },
@@ -65,11 +65,11 @@
     "members": [
       {
         "name": "Salonee Verma",
-        "image": "/headshots/salonee.jpg"
+        "image": "/headshots/salonee.webp"
       },
       {
         "name": "Christy Lee",
-        "image": "/headshots/christy.jpg"
+        "image": "/headshots/christy.webp"
       }
     ]
   },
@@ -78,11 +78,11 @@
     "members": [
       {
         "name": "Christine Han",
-        "image": "/headshots/christine.jpg"
+        "image": "/headshots/christine.webp"
       },
       {
         "name": "Jay Sikka",
-        "image": "/headshots/jay.png"
+        "image": "/headshots/jay.webp"
       }
     ]
   }

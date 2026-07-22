@@ -1,11 +1,12 @@
 import SectionHeader from "./components/SectionHeader";
 import EventSection from "./components/EventSection";
+import Reveal from "./components/Reveal";
 import longLogo from "./assets/long-logo.svg";
 import ideathonLogo from "./assets/ideathon-logo.svg";
 import estimathonLogo from "./assets/estimathon-logo.png";
-import hoohacksImage from "./assets/hoohacks.png";
-import ideathonImage from "./assets/ideathon.png";
-import estimathonImage from "./assets/estimathon.png";
+import hoohacksImage from "./assets/hoohacks.webp";
+import ideathonImage from "./assets/ideathon.webp";
+import estimathonImage from "./assets/estimathon.webp";
 
 export default function Events() {
     const events = [
@@ -45,14 +46,18 @@ export default function Events() {
     ];
 
     return (
-        <div className="w-250 max-w-full flex flex-col mx-auto py-16">
-            <SectionHeader>Our Events</SectionHeader>
+        <div id="events" className="w-250 max-w-full flex flex-col mx-auto py-16 scroll-mt-10">
+            <Reveal>
+                <SectionHeader>Our Events</SectionHeader>
+            </Reveal>
             <div className="flex flex-col gap-8 p-4">
                 {
                     events.map(event => (
-                        <EventSection key={event.title} title={event.title} logo={event.logo} date={event.date} href={event.href} image={event.image} logoStyles={event.logoStyles}>
-                            {event.children}
-                        </EventSection>
+                        <Reveal key={event.title}>
+                            <EventSection title={event.title} logo={event.logo} date={event.date} href={event.href} image={event.image} logoStyles={event.logoStyles}>
+                                {event.children}
+                            </EventSection>
+                        </Reveal>
                     ))
                 }
             </div>

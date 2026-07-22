@@ -4,8 +4,7 @@ import dome from "./dome.svg";
 import stars4 from "./stars/star4.svg";
 import stars5 from "./stars/star5.svg";
 import stars6 from "./stars/star6.svg";
-import { useEffect, useState } from "react";
-import JSX from "react";
+import { useEffect, useState, type ReactElement } from "react";
 
 function random(seed: { current: number }) {
   seed.current += 1;
@@ -21,7 +20,7 @@ export default function Hero() {
   const stars = [stars4, stars5, stars6];
 
   // Randomly generate stars
-  const starElements: JSX.ReactElement[] = [];
+  const starElements: ReactElement[] = [];
   for (let i = 0; i < 20; i++) {
     starElements.push(
       <div key={"star" + i} className="star absolute transition-opacity duration-500" style={{ top: starStyles[i]?.top, left: starStyles[i]?.left }} suppressHydrationWarning={true}>
@@ -32,7 +31,7 @@ export default function Hero() {
   }
 
   // Randomly generate clouds
-  const cloudElements: JSX.ReactElement[] = [];
+  const cloudElements: ReactElement[] = [];
   const colors = [
     { color: "#87A2FC", opacity: 0.5 },
     { color: "#87A2FC", opacity: 0.5 },
@@ -145,11 +144,25 @@ export default function Hero() {
       {cloudElements}
       <div className="w-full h-screen z-0 absolute">
         {starElements}
+        <span aria-hidden="true" className="shooting-star" style={{ top: "14%", left: "78%", animationDuration: "16s", animationDelay: "3s" }} />
+        <span aria-hidden="true" className="shooting-star" style={{ top: "28%", left: "90%", animationDuration: "23s", animationDelay: "11s" }} />
+        <span aria-hidden="true" className="shooting-star" style={{ top: "7%", left: "48%", animationDuration: "19s", animationDelay: "7s" }} />
       </div>
       <div
         style={{ background: "linear-gradient(90deg, #87A2FC 0%, #2848BA 100%)" }}
         className="w-full h-24 absolute bottom-0"
       />
+      <div className="absolute bottom-7 left-1/2 -translate-x-1/2 z-10">
+        <a
+          href="#events"
+          aria-label="Scroll down to our events"
+          className="block p-2 rounded-full motion-safe:animate-bounce opacity-80 transition-opacity duration-300 hover:opacity-100 focus-visible:outline-2 focus-visible:outline-white"
+        >
+          <svg width="28" height="16" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0.982422 1.00342L8.33769 7.01953L14.9824 1.03406" stroke="white" strokeWidth="2" />
+          </svg>
+        </a>
+      </div>
       <div className="flex flex-col absolute left-0 top-0 px-10 xl:px-30 w-full h-screen gap-8 items-end pt-20 overflow-hidden">
         <div id="hoohacks-logo" className="block w-xlg mx-auto mt-auto bg-inherit z-10">
           <img src={logo} alt="HooHacks Logo" className="hidden sm:block" />

@@ -1,80 +1,62 @@
-import { Link } from "react-router";
 import SectionHeader from "./components/SectionHeader";
+import Reveal from "./components/Reveal";
 import sponsors from "./data/sponsors.json";
-import "react-multi-carousel/lib/styles.css";
-import { lazy, Suspense, type JSX } from "react";
 
-const Carousel = lazy(() => import('react-multi-carousel'))
+type Sponsor = { name: string; logo: string; website: string };
 
-function sponsorItem(sponsor: { name: string; logo: string, website: string }) {
-    return (
-        <Link to={sponsor.website} target="_blank" rel="noopener noreferrer">
-            <div key={sponsor.name} className="w-60 h-25 px-8 py-4 rounded-xl bg-white">
-                <img src={sponsor.logo} alt={sponsor.name} className="w-full h-full object-contain" />
-            </div>
-        </Link>
+/**
+ * Seamless marquee row: the strip is rendered twice and the track translates
+ * by exactly -50%, so the loop point is invisible. Edges fade out with a CSS
+ * mask instead of clipping logos mid-tile. Pauses for reduced-motion users
+ * and while a tile inside has keyboard focus.
+ */
+function SponsorRow({ items, reverse = false, duration }: { items: Sponsor[]; reverse?: boolean; duration: number }) {
+    const strip = (ariaHidden: boolean) => (
+        <ul className="flex gap-8 pr-8" aria-hidden={ariaHidden || undefined}>
+            {items.map((sponsor) => (
+                <li key={sponsor.name} className="shrink-0">
+                    <a
+                        href={sponsor.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        tabIndex={ariaHidden ? -1 : undefined}
+                        className="block rounded-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#B1CCFF]"
+                    >
+                        <div className="w-60 h-25 px-8 py-4 rounded-xl bg-white transition-all duration-300 ease-out motion-safe:hover:-translate-y-1 hover:shadow-[0_16px_32px_-16px_rgba(0,4,45,0.8)]">
+                            <img src={sponsor.logo} alt={sponsor.name} loading="lazy" className="w-full h-full object-contain" />
+                        </div>
+                    </a>
+                </li>
+            ))}
+        </ul>
     );
-}
-
-function makeCarousel(items: JSX.Element[], rtl: boolean) {
-    const responsive = {
-        superLarge: {
-            breakpoint: { max: 4000, min: 3500 },
-            items: 6
-        },
-        large: {
-            breakpoint: { max: 3500, min: 1300 },
-            items: 4
-        },
-        medium: {
-            breakpoint: { max: 1300, min: 900 },
-            items: 2
-        },
-        small: {
-            breakpoint: { max: 900, min: 600 },
-            items: 1
-        },
-        superSmall: {
-            breakpoint: { max: 600, min: 0 },
-            items: 0.5
-        }
-    };
 
     return (
-        <Carousel
-            responsive={responsive}
-            swipeable={false}
-            draggable={false}
-            infinite={true}
-            autoPlay={true}
-            autoPlaySpeed={0}
-            pauseOnHover={false}
-            additionalTransfrom={0}
-            focusOnSelect={false}
-            customTransition="transform 3s linear"
-            transitionDuration={3000}
-            arrows={false}
-            centerMode={true}
-            rtl={rtl}
-            rewindWithAnimation={false}
-        >
-            {items}
-        </Carousel>
+        <div className="overflow-hidden py-4 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+            <div
+                className="flex w-max animate-[marquee_60s_linear_infinite] motion-reduce:[animation-play-state:paused] has-[:focus-visible]:[animation-play-state:paused]"
+                style={{ animationDuration: `${duration}s`, animationDirection: reverse ? "reverse" : undefined }}
+            >
+                {strip(false)}
+                {strip(true)}
+            </div>
+        </div>
     );
 }
 
 export default function Sponsors() {
-    const topSponsors = sponsors.slice(0, sponsors.length / 2);
-    const bottomSponsors = sponsors.slice(sponsors.length / 2);
+    const topSponsors = sponsors.slice(0, Math.ceil(sponsors.length / 2));
+    const bottomSponsors = sponsors.slice(Math.ceil(sponsors.length / 2));
 
     return (
-        <div className="w-full mt-16 mb-32">
-            <Suspense>
+        <div id="sponsors" className="w-full mt-16 mb-32 scroll-mt-10">
+            <Reveal>
                 <SectionHeader>Sponsors</SectionHeader>
-                {makeCarousel(topSponsors.map((sponsor) => sponsorItem(sponsor)), false)}
-                <div className="py-8"></div>
-                {makeCarousel(bottomSponsors.map((sponsor) => sponsorItem(sponsor)), true)}
-            </Suspense>
+            </Reveal>
+            <Reveal>
+                <SponsorRow items={topSponsors} duration={topSponsors.length * 7} />
+                <SponsorRow items={bottomSponsors} duration={bottomSponsors.length * 8} reverse />
+            </Reveal>
         </div>
     );
 }

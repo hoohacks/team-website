@@ -1,22 +1,29 @@
 import SectionHeader from "./components/SectionHeader";
 import DropdownSection from "./components/CollapsibleSection";
-import { Link } from "react-router";
+import Button from "./components/Button";
+import Reveal from "./components/Reveal";
 import committees from "./data/committees.json";
 
 export default function Events() {
     return (
-        <div className="w-250 max-w-full flex flex-col mx-auto my-16">
-            <SectionHeader>Committees</SectionHeader>
-            <div className="flex flex-col gap-2 p-4">
+        <div id="committees" className="w-250 max-w-full flex flex-col mx-auto my-16 scroll-mt-10">
+            <Reveal>
+                <SectionHeader>Committees</SectionHeader>
+            </Reveal>
+            <div className="flex flex-col gap-3 p-4">
                 {
-                    committees.map((committee) => (
-                        <DropdownSection key={committee.name} title={committee.name}>
-                            {committee.description}
-                        </DropdownSection>
+                    committees.map((committee, i) => (
+                        <Reveal key={committee.name} delay={i * 75}>
+                            <DropdownSection title={committee.name}>
+                                {committee.description}
+                            </DropdownSection>
+                        </Reveal>
                     ))
                 }
             </div>
-            <Link to="/team" className="px-5 py-3 my-4 text-black bg-[#B1CCFF] rounded-lg w-fit m-auto">Meet the Team</Link>
+            <Reveal className="flex">
+                <Button to="/team" className="my-4 w-fit m-auto">Meet the Team</Button>
+            </Reveal>
         </div>
     );
 }
