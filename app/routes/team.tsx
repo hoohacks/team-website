@@ -51,16 +51,22 @@ function MemberCard({ name, image, role, className = "" }: { name: string; image
 
 function CommitteeMembers({ names }: { names: string[] }) {
     return (
-        <ul className="space-y-2.5 text-center">
-            {names.map((memberName) => (
-                <li
-                    key={memberName}
-                    className="text-sm text-white/65 transition-colors duration-300 ease-out hover:text-white"
-                >
-                    {memberName}
-                </li>
-            ))}
-        </ul>
+        <div>
+            {/* Quiet tier label — muted so it reads as a section caption, not a title */}
+            <p className="mb-3 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40">
+                Members
+            </p>
+            <ul className="space-y-2.5 text-center">
+                {names.map((memberName) => (
+                    <li
+                        key={memberName}
+                        className="text-sm text-white/65 transition-colors duration-300 ease-out hover:text-white"
+                    >
+                        {memberName}
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
 
@@ -140,7 +146,7 @@ export default function Team() {
                                     <div className="mx-auto mt-3 h-0.5 w-10 rounded-full bg-[#87A2FC]/50" />
                                 </div>
                                 {split ? (
-                                    <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-8">
+                                    <div className="flex flex-wrap items-start justify-center gap-x-10 gap-y-8">
                                         <MemberCard name={c.members[0].name} image={c.members[0].image} role={c.role} className="order-1" />
                                         <div className="order-3 w-full lg:order-2 lg:w-auto lg:min-w-[9rem]">
                                             <CommitteeMembers names={general} />

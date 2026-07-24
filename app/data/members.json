@@ -1,6 +1,6 @@
 [
   {
-    "committee": "President",
+    "committee": "Leadership",
     "role": "Co-President",
     "members": [
       {
@@ -15,7 +15,7 @@
   },
   {
     "committee": "Technology",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Urav Tanna",
@@ -30,7 +30,7 @@
   },
   {
     "committee": "Finance",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Courtney Rodig",
@@ -45,7 +45,7 @@
   },
   {
     "committee": "Marketing",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Aryaa Deshpande",
@@ -60,7 +60,7 @@
   },
   {
     "committee": "Sponsorship",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Malisha Das",
@@ -75,7 +75,7 @@
   },
   {
     "committee": "Hacker Experience",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Salonee Verma",
@@ -90,7 +90,7 @@
   },
   {
     "committee": "Internal",
-    "role": "Chair",
+    "role": "Executive",
     "members": [
       {
         "name": "Christine Han",
