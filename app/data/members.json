@@ -1,89 +1,102 @@
 [
   {
-    "committee": "President",
+    "committee": "Leadership",
+    "role": "President",
     "members": [
       {
-        "name": "Austin Trinh",
-        "image": "/headshots/austin.jpg"
+        "name": "Urav Tanna",
+        "image": "/headshots/urav.webp"
+      },
+      {
+        "name": "Salonee Verma",
+        "image": "/headshots/salonee.webp"
       }
     ]
   },
   {
     "committee": "Technology",
+    "role": "Executive",
     "members": [
       {
-        "name": "Urav Tanna",
-        "image": "/headshots/urav.jpg"
+        "name": "Colin Park",
+        "image": "/headshots/colin.webp"
       },
       {
-        "name": "Diana Lin",
-        "image": "/headshots/diana.jpg"
+        "name": "Julia Chen",
+        "image": "/headshots/julia.webp"
       }
-    ]
+    ],
+    "general": ["Diana Lin", "Dang Le", "Christopher Currie"]
   },
   {
     "committee": "Finance",
+    "role": "Executive",
     "members": [
       {
-        "name": "Courtney Rodig",
-        "image": "/headshots/courtney.jpg"
+        "name": "Hannah Cohen",
+        "image": "/headshots/hannah.webp"
       },
       {
-        "name": "Christian Min",
-        "image": "/headshots/christian.png"
+        "name": "Summer Mu",
+        "image": "/headshots/summer.webp"
       }
-    ]
+    ],
+    "general": ["Jai Kanchan"]
   },
   {
     "committee": "Marketing",
+    "role": "Executive",
     "members": [
       {
-        "name": "Aryaa Deshpande",
-        "image": "/headshots/aryaa.jpg"
+        "name": "Swetha Rajan",
+        "image": "/headshots/swetha.webp"
       },
       {
         "name": "Richard Do",
-        "image": "/headshots/richard.jpg"
+        "image": "/headshots/richard.webp"
       }
-    ]
+    ],
+    "general": ["Samantha Apolinsky"]
   },
   {
     "committee": "Sponsorship",
+    "role": "Executive",
     "members": [
       {
         "name": "Malisha Das",
-        "image": "/headshots/malisha.jpg"
+        "image": "/headshots/malisha.webp"
       },
       {
-        "name": "Jamar Oldacre",
-        "image": "/headshots/jamar.jpg"
+        "name": "Karina Kejriwal",
+        "image": "/headshots/karina.webp"
       }
-    ]
+    ],
+    "general": ["Jamar Oldacre", "Shrihan Vijay", "Aryan Kulkarni", "Riya Ghate", "Smayan Sangoju"]
   },
   {
     "committee": "Hacker Experience",
+    "role": "Executive",
     "members": [
       {
-        "name": "Salonee Verma",
-        "image": "/headshots/salonee.jpg"
+        "name": "Chinmayee Yerraguntla",
+        "image": "/headshots/chinmayee.webp"
       },
       {
         "name": "Christy Lee",
-        "image": "/headshots/christy.jpg"
+        "image": "/headshots/christy.webp"
       }
-    ]
+    ],
+    "general": ["Pierce Brookins", "Michelle Che", "Jessica Su", "Yogesh Thambidurai", "Sohan Dadana", "Shahzaib Tariq"]
   },
   {
     "committee": "Internal",
+    "role": "Executive",
     "members": [
       {
-        "name": "Christine Han",
-        "image": "/headshots/christine.jpg"
-      },
-      {
-        "name": "Jay Sikka",
-        "image": "/headshots/jay.png"
+        "name": "Niya Talluri",
+        "image": "/headshots/niya.webp"
       }
-    ]
+    ],
+    "general": ["Eileen Kopp", "Cynthia Huang"]
   }
 ]

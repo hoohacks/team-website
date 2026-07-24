@@ -5,9 +5,69 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-html,
-body {
+/* Gradient lives on <html> only. Painting it on both html and body meant a
+   collapsed top margin (e.g. the team page) could offset the body's copy and
+   leave a visible seam near the top; a single background can't seam. */
+html {
   background: linear-gradient(180deg, #000824 0%, #121A6A 100%);
   min-height: 100vh;
   color-scheme: dark;
+}
+
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(135, 162, 252, 0.45);
+  color: #fff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Shooting stars in the hero sky. Bright head leads the fading tail; each
+   star streaks once per animation cycle and stays hidden the rest of it. */
+.shooting-star {
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .shooting-star {
+    animation: shoot linear infinite;
+  }
+}
+
+@keyframes shoot {
+  0% {
+    transform: rotate(155deg) translateX(0);
+    opacity: 0;
+  }
+  0.6% {
+    opacity: 0.9;
+  }
+  4% {
+    transform: rotate(155deg) translateX(58vw);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(155deg) translateX(58vw);
+    opacity: 0;
+  }
 }

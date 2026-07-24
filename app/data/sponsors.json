@@ -22,7 +22,8 @@
     {
         "name": "Fannie Mae",
         "logo": "/sponsors/fannie-mae.png",
-        "website": "https://www.fanniemae.com"
+        "website": "https://www.fanniemae.com",
+        "scale": 1.35
     },
     {
         "name": "Geico",
