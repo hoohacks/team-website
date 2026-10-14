@@ -26,7 +26,7 @@
         "image": "/headshots/julia.webp"
       }
     ],
-    "general": ["Diana Lin", "Dang Le", "Christopher Currie"]
+    "general": ["Diana Lin", "Dang Le", "Christopher Currie", "Seungwoo Yoon", "Amaan Dhanani", "Shreyas Muppaneni", "Aditya Khandelwal"]
   },
   {
     "committee": "Finance",
@@ -41,7 +41,7 @@
         "image": "/headshots/summer.webp"
       }
     ],
-    "general": ["Jai Kanchan"]
+    "general": ["Jai Kanchan", "Allison Ma", "Maavin Maheshwari", "Mateo Irinchev", "James Ngo"]
   },
   {
     "committee": "Marketing",
@@ -56,7 +56,7 @@
         "image": "/headshots/richard.webp"
       }
     ],
-    "general": ["Samantha Apolinsky", "Nimisha Vadlamudi", "Daniela Delgado"]
+    "general": ["Samantha Apolinsky", "Nimisha Vadlamudi", "Daniela Delgado", "Anya Beachy", "Alexander Peter Surette", "Peyton Mcdonald", "Vivian Chen"]
   },
   {
     "committee": "Sponsorship",
@@ -71,7 +71,7 @@
         "image": "/headshots/karina.webp"
       }
     ],
-    "general": ["Jamar Oldacre", "Shrihan Vijay", "Aryan Kulkarni", "Riya Ghate", "Smayan Sangoju"]
+    "general": ["Jamar Oldacre", "Shrihan Vijay", "Aryan Kulkarni", "Riya Ghate", "Smayan Sangoju", "Alia Vanik", "Arnav Sharma", "Agrim Bansal", "Ashmit Rama"]
   },
   {
     "committee": "Hacker Experience",
@@ -86,7 +86,7 @@
         "image": "/headshots/christy.webp"
       }
     ],
-    "general": ["Pierce Brookins", "Jessica Su", "Yogesh Thambidurai", "Sohan Dadana", "Shahzaib Tariq"]
+    "general": ["Pierce Brookins", "Jessica Su", "Yogesh Thambidurai", "Sohan Dadana", "Shahzaib Tariq", "Kiernan Hubenko", "Samhith Sarva", "Abhi Kurapati", "Sherry Wang", "Haley Sheth"]
   },
   {
     "committee": "Internal",
@@ -97,6 +97,6 @@
         "image": "/headshots/niya.webp"
       }
     ],
-    "general": ["Eileen Kopp", "Cynthia Huang"]
+    "general": ["Eileen Kopp", "Cynthia Huang", "Angel Miras", "Anushree Chandrashekar", "Samiksha Gumma", "Jonathan Lu"]
   }
 ]
